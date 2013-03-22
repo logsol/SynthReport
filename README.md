@@ -1,0 +1,1 @@
+This paper describes an attempt to design and assemble a basic monophonic synthesizer prototype consisting of some standard modules that are to be found in virtually every classical synthesizer device, such as an oscillator, an envelope, and a filter. 
