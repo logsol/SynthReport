@@ -15,6 +15,7 @@
 % Important for page numbering
 \pagestyle{plain}
 
+
 % CHAPTER TITLE
 % \titleformat command shape format label sep before after 
 \titleformat
@@ -148,7 +149,7 @@ end{textblock*}
 \backslash
 begin{textblock*}{
 \backslash
-paperwidth}(21mm,215mm)
+paperwidth}(30mm,235mm)
 \end_layout
 
 \begin_layout Plain Layout
@@ -327,6 +328,13 @@ contentsname{}
 
 
 \backslash
+vspace*{-8.5em} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
 tableofcontents
 \end_layout
 
@@ -371,6 +379,7 @@ To make it playable with a keyboard, a MIDI input module is added.
  into control voltage outputs that other modules can connect to.
  It is the only digital component of the synthesizer, while tone generation
  and processing are analog.
+ 
 \end_layout
 
 \begin_layout Section*
@@ -382,6 +391,21 @@ The project was inspired by the film
 \emph on
 moog
 \emph default
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp{Fjellestad:movie}}
+\end_layout
+
+\end_inset
+
 , a documentary about Dr.
  Robert Moog, electronic instrument pioneer and inventor.
  Its goal is to attain a better understanding of the working of electronic
@@ -389,6 +413,17 @@ moog
  Another goal is to create a functional synthesizer that is fun to play
  and experiment with and therefore obtain some practical experience in the
  field of artificial sound generation.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+try get focus on researches, bring in a bit of a guide line for self builders
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -601,24 +636,109 @@ citealp[p.~3]{Manning1985}}
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The german engineer Harald Bode contributed to the design of several new
+ instruments from the 1930's on, like the warbo formant organ (1937) or
+ later the Melochord (1949).
+ He was primarily interested in providing tools for a wide range of musicians,
+ which is why his contributions straddled between the two major design tradition
+s of new sounds versus imitation of traditional ones.
+ He turned out to be one of central figures in the history of electronic
+ music, since he was also one of the primary engineers in establishing the
+ classic tape music studio in europe 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp[p.~9]{Dunn1992}}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Bode was one of the first engineers to grasp the significance of the invention
+ of the solid state transistor for sound synthesis.
+ In an article published in 1961 he draws particular attention to the advanteges
+ of modular design.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+The versatility of transistor-based electronics made it possible to design
+ any number of devices which could be controlled by a common set of voltage
+ characteristics.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp[p.~117]{Manning1985}}
+\end_layout
+
+\end_inset
+
+.
+ But it was not until the early 1960's that major advances in electronic
+ design took shape 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp[p.~19]{Dunn1992}}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Sakbutt (1948) Hugh LeCaine
 \end_layout
 
-\begin_layout Standard
-Melochord (1949) and warbo formant organ (1937) H.
- Bode 
-\end_layout
+\end_inset
 
-\begin_layout Section
-Influencial Electronic Music Projects of the Fifties
-\end_layout
 
-\begin_layout Standard
-Elektronische Musik Cologne (1952) Eimert (Stockhausen)
-\end_layout
-
-\begin_layout Standard
-Poem Electronique (1958) World Fair Brussels
 \end_layout
 
 \begin_layout Section
@@ -626,15 +746,140 @@ The First Synthesizers
 \end_layout
 
 \begin_layout Standard
-RCA Synthesizer (1955)
+In 1955 the laboratories of the Radio Corporation of America (RCA) introduced
+ a new and very advanced machine to the public named the Olson-Belar Sound
+ Synthesizer, later known as the RCA Mark I Music Synthesizer.
+ It combined many means of tone generation and sound modification known
+ at the time and is considered the first synthesizer.
+ Mark I was built with the specific intention of imitating traditional instrumen
+t sounds for the production of popular music.
+ However, the machine proved unsuitable for its original intent and was
+ later used completely for electronic music experimentation and composition
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp[p.~15-16]{Dunn1992}}
+\end_layout
+
+\end_inset
+
+.
+ The synthesizer could not be played in the conventional sense in real time.
+ Instead musical information had to be pre programmed as punched holes in
+ a large paper tape.
+ Olson and Belar produced an improved Mark II (nicknamed Victor) in 1957
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp{Bear:website}}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-First modular synthesizers (1945)
+Around the same time the outstanding guitarist and inventor Les Paul became
+ famous with his multitrack guitar recordings.
+ He stimulated many innovators not only with the success of his multitrack
+ recorder, but also with his methods of electronic sound processing.
+ Harald Bode was so impressed and inspired by his work, that he built a
+ system consisting of a number of electronic modules for sound modification
+ in late 1959 through 1960.
+ His system featured ring modulator devices, envelope followers and generators,
+ voltage-controlled amplifiers, filters, mixers and others 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp[p.~733]{Bode1984}}
+\end_layout
+
+\end_inset
+
+.
+ The modular concept of his device had proven attractive due to its versatility
+ and predicted the more powerful modular synthesizers that emerged in the
+ early 1960's 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp[p.~20]{Dunn1992}}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Moog Synthesizer (1964)
+In 1963 Robert Moog was selling kits of transistorized Theremins.
+ As he states in the movie about him 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp{Fjellestad:movie}}
+\end_layout
+
+\end_inset
+
+, he had been completely obsessed with building Theremins since the age
+ of 15.
+ He and the german composer Herbert Deutsch, who was using one of his instrument
+s, began to discuss the possibilities in designing new instruments and systems
+ using solid state technology.
+ This led Moog to the completion of the first prototype of his modular synthesiz
+er at the end of 1964.
+ 
+\end_layout
+
+\begin_layout Standard
+(Switched on Bach carlos wendy, popcorn, volts per octave - combine other
+ systems)
+\end_layout
+
+\begin_layout Standard
+Buchla
+\end_layout
+
+\begin_layout Standard
+ARP
+\end_layout
+
+\begin_layout Standard
+Polyphonics
 \end_layout
 
 \begin_layout Section
@@ -642,7 +887,7 @@ The Digital Age
 \end_layout
 
 \begin_layout Standard
-Text about it.
+Yamaha DX7
 \end_layout
 
 \begin_layout Chapter
@@ -650,7 +895,7 @@ Theory of subtractive synthesis
 \end_layout
 
 \begin_layout Section
-Sound Sources
+Sources
 \end_layout
 
 \begin_layout Standard
@@ -710,7 +955,7 @@ citealp[p.~124]{Friesecke2007}}
 \end_inset
 
 .
- The output signal of can later be processed and modulated in several ways.
+ The output signal can later be processed and modulated in several ways.
 \end_layout
 
 \begin_layout Standard
@@ -719,8 +964,8 @@ Oscillators that swing at an infrasonic frequency - meaning a frequency
  (LFO).
  They are used to control parameters of different components of the synthesizer
  periodically.
- For example to slightly influence the pitch of another oscillator to get
- a vibrato - or the amplitude to get a tremolo effect.
+ For example to influence the pitch of another oscillator to get a vibrato
+ - or the amplitude to get a tremolo effect.
  Some oscillators frequencies range from very low to very high, in which
  case a distinction between oscillator and LFO is unnecessary.
 \end_layout
@@ -790,8 +1035,17 @@ triangle Composed of only odd harmonics, the triangle wave has a much softer,
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-square Also known as rectangle, the square wave also consists of odd harmonics
- only.
+square Also known as rectangle, 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+clearify difference to triangle 
+\end_layout
+
+\end_inset
+
+ the square wave also consists of odd harmonics only.
  Its timbre reminds of woodwind instruments 
 \begin_inset ERT
 status open
@@ -1164,10 +1418,6 @@ Envelope Generator
 \end_layout
 
 \begin_layout Subsection
-Midi Input / Note Source
-\end_layout
-
-\begin_layout Subsection
 Output
 \end_layout
 
@@ -1222,7 +1472,7 @@ befaco
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Befaco, help, how well it is documented is important, why the filter was
@@ -1257,6 +1507,14 @@ There are several formats for module sizes, power supply plugs or patchchord
 \begin_layout Standard
 For tuned modules it is important to consider whether they use a volts per
  octave or volts per hertz characteristic.
+\end_layout
+
+\begin_layout Standard
+Audio Signals ±5Volts 
+\end_layout
+
+\begin_layout Standard
+Buffering 1:10 impedance ratio 
 \end_layout
 
 \begin_layout Section
@@ -1361,6 +1619,17 @@ The panels for all modules were made from pre-cut aluminum plates with a
  Once the panel is dried, the holes for the knobs, switches, etc.
  can be prepunched and drilled.
  Lastly all borholes are deburred.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+foto vom frontpanel ohne stecker
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1394,6 +1663,31 @@ When turning resonance up, at one point the filter begins to self-resonate
  The amount of distortion is visually represented by a red LED.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+beispiel patch mit foto und beschreibung
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Midi Input
+\end_layout
+
+\begin_layout Standard
+Note Source
+\end_layout
+
+\begin_layout Section
+Output
+\end_layout
+
 \begin_layout Chapter
 Conclusion
 \end_layout
@@ -1413,7 +1707,7 @@ tweaking knobs to borders where the outcome is on a threshold resulting
 Thanks to Eddi, Derek, Befaco, Richard, David
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Section*
 List of figures
 \end_layout
 
@@ -1421,7 +1715,7 @@ List of figures
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "synth_bibliography"
-options "plainnat"
+options "karls-bib"
 
 \end_inset
 
@@ -1432,8 +1726,32 @@ options "plainnat"
 Declaration of academic honesty
 \end_layout
 
+\begin_layout Standard
+I hereby declare that in the attached submission I have not presented anyone
+ else’s work, in whole or in part, as my own using only the admitted resources.
+ Where I have taken advantage of the work of others, I have given full acknowled
+gement.
+\end_layout
+
 \begin_layout Chapter*
 Appendix
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+urs hegemann
+\end_layout
+
+\begin_layout Plain Layout
+future audio workshop - cycle oder circle synthe
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
