@@ -16,6 +16,8 @@
 \pagestyle{plain}
 
 
+
+
 % CHAPTER TITLE
 % \titleformat command shape format label sep before after 
 \titleformat
@@ -1715,7 +1717,7 @@ List of figures
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "synth_bibliography"
-options "karls-bib"
+options "karl-second4"
 
 \end_inset
 
