@@ -11,12 +11,10 @@
 \usepackage[absolute]{textpos}
 \usepackage[authoryear]{natbib}
 \usepackage{titlesec}
+\usepackage{caption}
 
 % Important for page numbering
 \pagestyle{plain}
-
-
-
 
 % CHAPTER TITLE
 % \titleformat command shape format label sep before after 
@@ -24,16 +22,31 @@
 {\chapter}
 [display]
 {\normalfont}
-{\LARGE\raggedright\thechapter}{-32pt}
-{\LARGE\raggedleft}
+{\large\raggedright\thechapter}{-24pt}
+{\large\raggedleft}
 [{\titlerule[1pt]}]
 
+\titleformat{\section}
+  {\normalfont\fontsize{14pt}{14pt}\selectfont\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\fontsize{12pt}{12pt}\selectfont\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\fontsize{11pt}{11pt}\selectfont\bfseries}{\thesubsubsection}{1em}{}
+
+
+
 % Title margins
-\titlespacing{\chapter}{0pt}{-3em}{4em}
-\titlespacing{\section}{0pt}{2em}{6pt}
-\titlespacing{\subsection}{0pt}{2em}{6pt}
-\titlespacing{\subsubsection}{0pt}{6pt}{6pt}
+\titlespacing{\chapter}{0pt}{-3em}{3em}
+\titlespacing{\section}{0pt}{3em}{0,5em}
+\titlespacing{\subsection}{0pt}{2em}{0,5em}
+\titlespacing{\subsubsection}{0pt}{1,5em}{0,5em}
 \titlespacing{\paragraph}{0pt}{6pt}{6pt}
+
+
+% figure caption
+\captionsetup[figure]{font=small} 
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -56,7 +69,8 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 11
+\float_placement H
+\paperfontsize 12
 \spacing onehalf
 \use_hyperref false
 \papersize a4paper
@@ -77,9 +91,9 @@
 \end_index
 \paperwidth 11in
 \paperheight 8.5in
-\leftmargin 3cm
+\leftmargin 3.5cm
 \topmargin 3cm
-\rightmargin 3cm
+\rightmargin 2cm
 \bottommargin 3cm
 \secnumdepth 2
 \tocdepth 2
@@ -433,18 +447,6 @@ To make it playable with a keyboard, a MIDI input module is added.
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pagebreak
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -471,12 +473,12 @@ The process of writing this paper has been an unexpectedly rewarding and
  it with a predetermed mindset - has been something that really changed
  my perseption of musical creativity.
  This for me seems much more attainable in the analog world, where electrical
- components can be streched to certain limits, where it is uncertain what
- exactly will happen to the audio signal.
+ components and signal chains can be brought to their tipping points, resulting
+ in an unpredictable outcome.
  That is where sound exploration begins, which is a totally different experience
  than knowing what will happen.
- Virtual digital environments, which I was familiar with however, seem to
- tend persuade the user to feel in control at all times.
+ Virtual digital environments, which I was familiar with on the other hand,
+ generally seem to tend persuade the user to feel in control at all times.
 \end_layout
 
 \begin_layout Chapter
@@ -681,22 +683,6 @@ citealp[p.~3]{Manning1985}}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pagebreak
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 The german engineer Harald Bode contributed to the design of several new
  instruments from the 1930's on, like the warbo formant organ (1937) or
  later the Melochord (1949).
@@ -894,22 +880,6 @@ citealp[p.~20]{Dunn1992}}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pagebreak
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 In 1963 Robert Moog, a passionate inventor from Ithaca, New York, was selling
  kits of transistorized Theremins 
 \begin_inset ERT
@@ -947,13 +917,9 @@ citealp{Fjellestad:movie}}
  A year later he built a transistor based voltage-controlled oscillator
  and amplifier for the composer Herbert Deutsch.
  This led moog to the presentation of a paper entitled 
-\begin_inset Quotes eld
-\end_inset
-
+\emph on
 Voltage-Controlled Electronic Music Modules
-\begin_inset Quotes erd
-\end_inset
-
+\emph default
  at the sixteenth annual convention of the Audio Engineering Society, which
  had stimulated widespread interest 
 \begin_inset ERT
@@ -1004,13 +970,9 @@ citealp[p.~22]{Dunn1992}}
  Buchla's design approach differed significantly from Moog.
  He rejected the idea of a synthesizing familiar sounds and resisted the
  word 
-\begin_inset Quotes eld
-\end_inset
-
+\emph on
 synthesizer
-\begin_inset Quotes erd
-\end_inset
-
+\emph default
  ever since.
  It seemed much more interesting to emphasize new timbral possibilities
  and stress the complexity that could arise from randomness.
@@ -1059,13 +1021,9 @@ citealp[p.~20]{Dunn1992}}
  an album of titles by Johann Sebastian Bach interpreted only with Moog
  synthesizers.
  With the title 
-\begin_inset Quotes eld
-\end_inset
-
+\emph on
 Switched-on Bach
-\begin_inset Quotes erd
-\end_inset
-
+\emph default
  they demonstrated the performance of the system so convincingly, that they
  hit the popmusic charts and sold a million LP's 
 \begin_inset ERT
@@ -1283,7 +1241,7 @@ citealp[p.~55]{Ruschkowski1990}}
 \end_inset
 
 .
- A true square wave has a 50% duty cycle - equal high and low periods.
+ A true square wave has a 50 % duty cycle - equal high and low periods.
  However, oscillators often feature a pulse width parameter, trough which
  the high-low time ratio can be accessed.
  This has a distinct influence on the wave's timbre.
@@ -1470,13 +1428,9 @@ name "sub:filters"
 
  The filter is the processing component responsible for the sound changes,
  that people associate with 
-\begin_inset Quotes eld
-\end_inset
-
+\emph on
 the typical synthesizer sound
-\begin_inset Quotes erd
-\end_inset
-
+\emph default
  
 \begin_inset ERT
 status open
@@ -1673,11 +1627,6 @@ y manufactured circuit boards for this project as opposed to elaborating
 \end_layout
 
 \begin_layout Standard
-Since the budget for this project was limited, it was tried to arrange a
- smaller setup that would still offer lots of sound design possibilities.
-\end_layout
-
-\begin_layout Standard
 During the research phase of this project the author found out about a modular
  synthesizer building workshop taking place in berlin monthly.
  It is organized by a spanish collective from barcelona called 
@@ -1689,6 +1638,11 @@ befaco
  all necessary parts and also receive tips and support while assembling
  them.
  
+\end_layout
+
+\begin_layout Standard
+Since the budget for this project was limited, it was tried to arrange a
+ smaller setup that would still offer lots of sound design possibilities.
 \end_layout
 
 \begin_layout Standard
@@ -1819,8 +1773,105 @@ The case is a simple rack constructed from a few pieces of wood that are
  modules.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Frontpanels
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement R
+overhang 0in
+width "22text%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-2.5em} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/output-module-panel.pdf
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Output module template
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-2em} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1952,6 +2003,12 @@ I hereby declare that in the attached submission I have not presented anyone
  else’s work, in whole or in part, as my own using only the admitted resources.
  Where I have taken advantage of the work of others, I have given full acknowled
 gement.
+\end_layout
+
+\begin_layout Standard
+My signature below constitutes my pledge that all of the writing is my own
+ work, with the exception of those portions which are properly documented.
+ 
 \end_layout
 
 \begin_layout Chapter*
