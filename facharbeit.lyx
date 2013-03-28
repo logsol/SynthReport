@@ -345,47 +345,12 @@ tableofcontents
 
 \end_layout
 
-\begin_layout Chapter*
-About this paper
+\begin_layout Chapter
+Introduction
 \end_layout
 
 \begin_layout Section*
-Description
-\end_layout
-
-\begin_layout Standard
-This paper describes an attempt to design and assemble a basic monophonic
- synthesizer prototype consisting of some standard modules that are to be
- found in virtually every classical synthesizer device, such as an oscillator,
- an envelope, and a filter.
- 
-\end_layout
-
-\begin_layout Standard
-The first sections represent the research on the history and theoretical
- background of analog synthesizers in general and modular systems in particular.
- These findings are applied to building an experimental device.
- First, different circuit concepts will be introduced for each module, so
- that the most suitable ones can be identified, whereby comprehensibility
- and prices of electronic components play a significant role in the choice
- of a circuit design.
- The process of building the prototype includes working with an oscilloscope
- to examine and verify the shape of various waveforms before and after modulatio
-n.
- 
-\end_layout
-
-\begin_layout Standard
-To make it playable with a keyboard, a MIDI input module is added.
- It features an Arduino microprocessor to convert digital MIDI messages
- into control voltage outputs that other modules can connect to.
- It is the only digital component of the synthesizer, while tone generation
- and processing are analog.
- 
-\end_layout
-
-\begin_layout Section*
-Motivation and Goal
+Motivation
 \end_layout
 
 \begin_layout Standard
@@ -410,17 +375,56 @@ citealp{Fjellestad:movie}}
 
 , a documentary about Dr.
  Robert Moog, electronic instrument pioneer and inventor.
- Its goal is to attain a better understanding of the working of electronic
- components and circuits as well as their influence on audio signals.
- Another goal is to create a functional synthesizer that is fun to play
- and experiment with and therefore obtain some practical experience in the
- field of artificial sound generation.
- 
+ Its goal is to convey an understanding of the inner workings of electronic
+ synthesizers and their components.
+ The reader is guided through the process of creating a small but functional
+ modular synthesizer setup that is fun to play and experiment with.
+ The intention was to investigate the possibilities and limits in designing
+ and building an analog sound device for someone, who had not been in contact
+ with analog synthesizers, let alone building electronics devices before.
+\end_layout
+
+\begin_layout Section*
+Chapter Overview
+\end_layout
+
+\begin_layout Standard
+The first chapter represents the research on the historical background of
+ analog synthesizers since the beginning of the twentieth century.
+ It was tried to outline important milestones in the historic development
+ from the first electronic sound generating devices until a point in time
+ when manufacturers of modular synthesizers have developed a profitable
+ market.
+\end_layout
+
+\begin_layout Standard
+Subsequently the most important concepts of subtractive synthesis are summarized.
+ A general overview over common sound generation and processing methods
+ is given, whereby all concepts are applicable to both analog and digital
+ synthesis.
+ In chapter three these concepts are taken one step further and discussed
+ in the context of electronic circuitry.
+ Lastly the process of building an electronic synthesizer prototype is described.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
-try get focus on researches, bring in a bit of a guide line for self builders
+The process of building the prototype includes working with an oscilloscope
+ to examine and verify the shape of various waveforms before and after modulatio
+n.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+To make it playable with a keyboard, a MIDI input module is added.
+ It features an Arduino microprocessor to convert digital MIDI messages
+ into control voltage outputs that other modules can connect to.
+ It is the only digital component of the synthesizer, while tone generation
+ and processing are analog.
+ 
 \end_layout
 
 \end_inset
@@ -428,12 +432,51 @@ try get focus on researches, bring in a bit of a guide line for self builders
 
 \end_layout
 
-\begin_layout Chapter
-Introduction
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+A Personal Journey
 \end_layout
 
 \begin_layout Standard
-concepts from chapter two are applicable to digital and 
+As a trained programmer and web application developer the field of electronic
+ engineering always seemed appealing to me.
+ Hence the assignment for a research paper during the audio engineering
+ course at SAE Institute seemed like a welcome opportunity to dive into
+ the realm of building electronic devices in the context of sound generation
+ and modification.
+\end_layout
+
+\begin_layout Standard
+The process of writing this paper has been an unexpectedly rewarding and
+ inspiring experience, pushing the boundaries of my own musical and technical
+ understanding.
+ Most notably the concepts of free composition - meaning allowing randomness
+ and therefore putting oneself in the position of reacting to a musical
+ system, influencing it in terms of tendencies, rather than controlling
+ it with a predetermed mindset - has been something that really changed
+ my perseption of musical creativity.
+ This for me seems much more attainable in the analog world, where electrical
+ components can be streched to certain limits, where it is uncertain what
+ exactly will happen to the audio signal.
+ That is where sound exploration begins, which is a totally different experience
+ than knowing what will happen.
+ Virtual digital environments, which I was familiar with however, seem to
+ tend persuade the user to feel in control at all times.
 \end_layout
 
 \begin_layout Chapter
@@ -754,7 +797,8 @@ In 1955 the laboratories of the Radio Corporation of America (RCA) introduced
  It combined many means of tone generation and sound modification known
  at the time and is considered the first synthesizer.
  Mark I was built with the specific intention of imitating traditional instrumen
-t sounds for the production of popular music.
+t sounds and to reduce the costs of the production of popular music by replacing
+ musicians.
  However, the machine proved unsuitable for its original intent and was
  later used completely for electronic music experimentation and composition
  
@@ -776,8 +820,16 @@ citealp[p.~15-16]{Dunn1992}}
  The synthesizer could not be played in the conventional sense in real time.
  Instead musical information had to be pre programmed as punched holes in
  a large paper tape.
- Olson and Belar produced an improved Mark II (nicknamed Victor) in 1957
+ Harry Olson and Herbert Belar produced an improved Mark II Synthesizer
+ in 1957, which the nickname 
+\emph on
+Victor
+\emph default
+ was given
+\emph on
  
+\emph default
+
 \begin_inset ERT
 status open
 
@@ -838,10 +890,43 @@ citealp[p.~20]{Dunn1992}}
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
-In 1963 Robert Moog was selling kits of transistorized Theremins.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In 1963 Robert Moog, a passionate inventor from Ithaca, New York, was selling
+ kits of transistorized Theremins 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp[p.~20]{Dunn1992}}
+\end_layout
+
+\end_inset
+
+.
  As he states in the movie about him 
 \begin_inset ERT
 status open
@@ -857,43 +942,177 @@ citealp{Fjellestad:movie}}
 
 \end_inset
 
-, he had been completely obsessed with building Theremins since the age
- of 15.
- He and the german composer Herbert Deutsch, who was using one of his instrument
-s, began to discuss the possibilities in designing new instruments and systems
- using solid state technology.
- This led Moog to the completion of the first prototype of his modular synthesiz
-er at the end of 1964.
+, he had been completely obsessed with building and later designing Theremins
+ since the age of 14.
+ A year later he built a transistor based voltage-controlled oscillator
+ and amplifier for the composer Herbert Deutsch.
+ This led moog to the presentation of a paper entitled 
+\begin_inset Quotes eld
+\end_inset
+
+Voltage-Controlled Electronic Music Modules
+\begin_inset Quotes erd
+\end_inset
+
+ at the sixteenth annual convention of the Audio Engineering Society, which
+ had stimulated widespread interest 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp[p.~117-118]{Manning1985}}
+\end_layout
+
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Standard
-(Switched on Bach carlos wendy, popcorn, volts per octave - combine other
- systems)
+Similar developments had been taking place at the west coast of the united
+ states.
+ Morton Subotnick and Ramon Sender started their carreer in electronic music
+ experimentation, and became increasingly dissatisfied with the severe limitatio
+ns of traditional equipment at the San Francisco Tape Music Center, where
+ they were working.
+ They sought out to hire a competent engineer and met Donald Buchla 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp[p.~117-118]{Manning1985}, 
+\backslash
+citealp[p.~22]{Dunn1992}}
+\end_layout
+
+\end_inset
+
+.
+ Their discussions resulted in the concept of a modular voltage-controlled
+ system.
+ Buchla's design approach differed significantly from Moog.
+ He rejected the idea of a synthesizing familiar sounds and resisted the
+ word 
+\begin_inset Quotes eld
+\end_inset
+
+synthesizer
+\begin_inset Quotes erd
+\end_inset
+
+ ever since.
+ It seemed much more interesting to emphasize new timbral possibilities
+ and stress the complexity that could arise from randomness.
+ At the same time Buchla was fascinated with designing control devices other
+ than the standard keyboard, which Moog decided to use for playing 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp[p.~20]{Dunn1992}}
+\end_layout
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
-Buchla
+In 1966 Bob Moogs first production model was available from the business
+ R.A.
+ Moog Co.
+ that he had founded 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp[p.~20]{Dunn1992}}
+\end_layout
+
+\end_inset
+
+.
+ At this time Walter Carlos, an audio engineer from New York who adviced
+ Bob Moog while perfecting his system, worked with Benjamin Folkman to produce
+ an album of titles by Johann Sebastian Bach interpreted only with Moog
+ synthesizers.
+ With the title 
+\begin_inset Quotes eld
+\end_inset
+
+Switched-on Bach
+\begin_inset Quotes erd
+\end_inset
+
+ they demonstrated the performance of the system so convincingly, that they
+ hit the popmusic charts and sold a million LP's 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp[p.~45]{Ruschkowski1990}}
+\end_layout
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
-ARP
+By the end of the decade two other manufactrurers entered the market: ARP
+ in America and EMS Ltd.
+ in England.
+ They had become major rivals for Moog and Buchla.
+ Synthesizer production was dominated by these four companies for several
+ years, whereby each firm struggled for a major share of a highly lucrative,
+ rapidly expanding market 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citetext{
+\backslash
+citealp[p.~118]{Manning1985}}
 \end_layout
 
-\begin_layout Standard
-Polyphonics
-\end_layout
+\end_inset
 
-\begin_layout Section
-The Digital Age
-\end_layout
-
-\begin_layout Standard
-Yamaha DX7
+.
 \end_layout
 
 \begin_layout Chapter
-Theory of subtractive synthesis
+Theory of Subtractive Synthesis
 \end_layout
 
 \begin_layout Section
@@ -930,11 +1149,11 @@ Wave Oscillation
 
 \begin_layout Standard
 At the root of every artificial tone generating system there is an element
- that produces a vibration.
+ that produces an oscillation.
  This element is mostly described as the oscillator, which represents the
  very source of what can be heard eventually.
- The oscillator produces a periodic wave, that oscillates between an amplitude-m
-inima and -maxima.
+ The oscillator produces a periodic wave, that moves between an amplitude-minima
+ and -maxima.
  Its waveform (shape of the wave) determines the overtone structure and
  therefore the timbre of this basic source sound.
  Oscillators often provide several waveforms between which it is possible
@@ -1372,7 +1591,7 @@ A modular synthesizer is an electronic instrument, where sound generators,
 \end_layout
 
 \begin_layout Chapter
-Analog synthesis
+Analog Synthesis
 \end_layout
 
 \begin_layout Section
@@ -1424,7 +1643,7 @@ Output
 \end_layout
 
 \begin_layout Chapter
-Building a modular synthesizer
+Building a Modular Synthesizer
 \end_layout
 
 \begin_layout Section
