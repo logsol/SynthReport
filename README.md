@@ -1,6 +1,6 @@
 #Motivation
 
-The project was inspired by the film moog \cite{Fjellestad:movie}, a documentary about Dr. Robert Moog, electronic instrument pioneer and inventor. Its goal is to convey an understanding of the inner workings of electronic synthesizers and their components. The reader is guided through the process of creating a small but functional modular synthesizer setup that is fun to play and experiment with. The intention was to investigate the possibilities and limits in designing and building an analog sound device for someone, who had not been in contact with analog synthesizers, let alone building electronics devices before.
+The project was inspired by the film moog, a documentary about Dr. Robert Moog, electronic instrument pioneer and inventor. Its goal is to convey an understanding of the inner workings of electronic synthesizers and their components. The reader is guided through the process of creating a small but functional modular synthesizer setup that is fun to play and experiment with. The intention was to investigate the possibilities and limits in designing and building an analog sound device for someone, who had not been in contact with analog synthesizers, let alone building electronics devices before.
 
 #Chapter Overview
 
