@@ -1,0 +1,146 @@
+/* SweetCronThemes.com CSS - 25.01.2009
+	UXCron Theme is inspired by UXMag.com
+	
+	Theme Name 	: UXCron
+	Version 	: 0.8
+	Author		: Ozan Caglargil
+	Contact		: http://www.sweetcronthemes.com/p/contact
+	
+			
+*/
+
+/* Reset
+---------------------------------------------------------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* now I'm working with a clean slate! */
+body {font:11px/15px Arial,Helvetica,sans-serif;}
+
+.centerbox {width:980px;margin:0 auto;}
+
+
+#main_container {width:760px;float:left;}
+#sidebar_container {width:220px;float:right;}
+
+#pagination {clear:both;}
+
+
+/* Activity List                                                                 
+---------------------------------------------------------------------------------------- */
+#activity_list {}
+#activity_list .activity_item {float:left;margin:0px;width:180px;height:180px;margin:0 8px 8px 0px;}
+
+#activity_list .activity_item .activity_list_inner {background:url(images/bg-box.gif) no-repeat scroll 0 0;height:180px;width:180px;overflow:hidden;}
+#activity_list li.status .activity_list_inner{background:none;}
+
+
+
+#activity_list .last {margin-right:0;}
+#activity_list .activity_item .activity_list_inner .content_wrapper {padding:8px;display:block;height:178px;text-decoration:none;color:#999;}
+
+
+
+
+#activity_list .activity_item .activity_list_inner .content_wrapper:hover {border-color:#C00;}
+p.date {display:none;}
+
+#activity_list .activity_item .activity_list_inner .content_wrapper p{color:#333;font:11px/13px Arial,Helvetica,sans-serif;}
+#activity_list .activity_item .activity_list_inner .content_wrapper a{border:none;padding:0;display:inline;height:auto;text-decoration:none;color:#333;}
+
+span.type_label {font:10px/10px Arial,Helvetica,sans-serif;display:block;color:#CCC;}
+span.post_title {font:14px/16px Arial,Helvetica;display:block;color:#690000;}
+
+#activity_list .activity_item .activity_list_inner .content_wrapper:hover span.post_title {color:#C00;cursor: pointer;}
+
+
+
+
+#activity_list .lastfm .activity_list_inner{background:#dc2500 url(images/bg-box.gif) no-repeat scroll 0 0;position:relative;}
+#activity_list .lastfm .activity_list_inner span.post_title{color:#FFF;}
+#activity_list .lastfm .activity_list_inner .type_label{color:#FFF;padding:2px 0 35px 10px;background:url(images/logo-lastfm.jpg) no-repeat 1px 1px;margin-right:1px;}
+#activity_list .lastfm .activity_list_inner .content_wrapper{margin:0;padding:0;height:180px;}
+#activity_list .lastfm .activity_list_inner .content_wrapper span.post_title{color:#FFF;bottom:45px;position:absolute;padding:5px;left:10px;right:10px;cursor: pointer;}
+#activity_list .lastfm .activity_list_inner .content_wrapper:hover span.post_title{color:#EEE;}
+
+
+#activity_list .activity_item .activity_list_inner .photo {position:relative;width:180px;height:180px;display:block;}
+#activity_list .activity_item .activity_list_inner .photo span.post_title{background:url(images/alpha75.png);bottom:25px;position:absolute;padding:5px;left:10px;right:25px;cursor: pointer;}
+
+* html #activity_list .activity_item .activity_list_inner .photo span.post_title{background-image:none;background-color:#FFF;}
+
+#activity_list .bright .activity_list_inner{background-image:none;position:relative;}
+#activity_list .bright .activity_list_inner span.post_title{color:#003E7E}
+#activity_list .bright .activity_list_inner .type_label{color:#213442;padding:5px 0 10px 10px;}
+#activity_list .bright .activity_list_inner .content_wrapper{margin:0;padding:0;border:8px solid #213442;height:164px;background:url(images/bg-brightkite.png) no-repeat;}
+#activity_list .bright .activity_list_inner .content_wrapper span.post_title{background:url(images/alpha75.png);bottom:15px;position:absolute;padding:5px;left:15px;right:15px;}
+* html #activity_list .bright .activity_list_inner .content_wrapper span.post_title{background-image:none;background-color:#FFF;cursor: pointer;}
+#activity_list .bright .activity_list_inner .content_wrapper:hover span.post_title{}
+
+
+#activity_list .activity_item .status {border:none;margin:1px;}
+#activity_list .activity_item .activity_list_inner .status {border:none;}
+#activity_list .activity_item .activity_list_inner .status .status {border:none;margin-bottom:8px;}
+#activity_list .activity_item .activity_list_inner .status p {border:5px solid #bfd4ea;margin:0px -8px;padding:4px 8px;font:14px/16px Georgia,serif;display:block;color:#003E7E;}
+#activity_list .activity_item .activity_list_inner .status:hover p {color:#C00;}
+.status_avatar {display:block;background:url(images/bubble.gif) no-repeat 120px 0px;text-align:right;padding:11px 0px 0px 0px;}
+.status_avatar img{border:none;}
+
+cite {font-style:italic;}
+
+/* Sidebar
+---------------------------------------------------------------------------------------- */
+#explanation {border:5px solid #EEE;color:#333;padding:8px;margin:8px 0px;background:#FAFAFA;font:14px/16px Arial,Helvetica;}
+#explanation a{text-decoration:none;color:#690000;}
+#explanation strong {color:#C00;}
+
+h3 {font:14px/16px Arial,Helvetica;font-weight:bold;display:block;color:#330000;margin:10px 0 5px 5px;clear:both;}
+ul.tag_list {list-style:none;margin:0 0 0 5px;padding:0;}
+ul.tag_list li {float:left;}
+ul.tag_list li a{text-decoration:none;color:#690000;font:12px/16px Arial,Helvetica,sans-serif;padding:0px 3px;}
+ul.tag_list li a:hover {text-decoration:underline;color:#C00;} 
+
+form {margin:0 0 0 5px;}
+input.text_input {width:150px;}
+
+#footer {clear:both;}
+/* IE Fixes (lulz)
+---------------------------------------------------------------------------------------- */
+
+#activity_list .activity_item .activity_list_inner .content_wrapper {
+    height: expression(this.scrollHeight > 164 ? "164px" : "auto"); /* IE */
+}
+
+/* 3rd Party
+---------------------------------------------------------------------------------------- */
+
+.dsq-comment-header {
+    background: #F8F8F8 !important;
+    padding-top: 2px !important;
+    border: 1px solid #EEE !important;
+    border-style: solid none none none !important;
+}
+/* Single
+---------------------------------------------------------------------------------------- */
+#single_container{margin-right:20px;}
+h2 {font:26px/32px "Myriad Pro",Arial,Helvetica,sans-serif;color:#111;border-bottom:3px solid #EEE;letter-spacing:-1px;padding-left:10px;}
+h2 a{text-decoration:none;color:#454545;}
+#single_container .blog p {margin:20px 10px;font:14px/21px Arial,Helvetica,sans-serif;}
+#single_container p a {color:#CB0000;}
+#tags_container{clear:both;float:none;color:#454545;background:#EEE;padding:5px 10px;margin-right:20px;}
+#tags_container ul li {float:none;display:inline;}
+#comments_container{clear:both;margin:20px 20px 20px 10px;}
+/* Pagination
+---------------------------------------------------------------------------------------- */
+p#pagination {padding:10px 0px;clear:both;word-spacing:5px;text-align:right;margin:0 15px 0 0;}
+p#pagination a {border:1px solid #330000;text-decoration:none;padding:5px 8px;color:#330000;background:#EEE;}
+p#pagination a:hover {border:1px solid #330000;text-decoration:none;padding:5px 8px;color:#FFF;background:#330000;}
+
+/* Footer
+---------------------------------------------------------------------------------------- */
+#footer {background:#330000;font:11px/19px Arial,Helvetica,sans-serif;text-align:right;padding:10px 0;color:#FFF;}
+#footer a{color:#FFF;text-decoration:none;font-weight:bold;}
+#footer a span {color:#999}
