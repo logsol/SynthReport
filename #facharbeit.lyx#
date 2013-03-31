@@ -403,7 +403,6 @@ cite{Fjellestad:movie}
 
 , a documentary about Dr.
  Robert Moog, electronic instrument pioneer and inventor.
- 
 \end_layout
 
 \begin_layout Section*
@@ -985,7 +984,7 @@ cite[p.~20]{Dunn1992}
 \end_layout
 
 \begin_layout Standard
-In 1963 Robert Moog, a passionate inventor from Ithaca, New York, was selling
+In 1963 Robert Moog, a passionate inventor from Ithaca New York was selling
  kits of transistorized Theremins 
 \begin_inset ERT
 status open
@@ -1000,7 +999,11 @@ cite[p.~20]{Dunn1992}
 \end_inset
 
 .
- As he states in the movie about him 
+ In the documenteray 
+\emph on
+moog
+\emph default
+ 
 \begin_inset ERT
 status open
 
@@ -1013,8 +1016,8 @@ cite{Fjellestad:movie}
 
 \end_inset
 
-, he had been completely obsessed with building and later designing Theremins
- since the age of 14.
+ he states that he had been completely obsessed with building and later
+ designing Theremins since the age of 14.
  A year later he built a transistor based voltage-controlled oscillator
  and amplifier for the composer Herbert Deutsch.
  This led moog to the presentation of a paper entitled 
@@ -1121,9 +1124,8 @@ vspace*{-2em}
  Similar developments had been taking place at the west coast of the united
  states.
  Morton Subotnick and Ramon Sender started their carreer in electronic music
- experimentation, and became increasingly dissatisfied with the severe limitatio
-ns of traditional equipment at the San Francisco Tape Music Center, where
- they were working.
+ experimentation and became increasingly dissatisfied with the severe limitation
+s of traditional equipment at the San Francisco Tape Music Center.
  They sought out to hire a competent engineer and met Donald Buchla 
 \begin_inset ERT
 status open
@@ -1320,6 +1322,13 @@ cite[p.~118]{Manning1985}
 
 \begin_layout Chapter
 Theory of Subtractive Synthesis
+\end_layout
+
+\begin_layout Standard
+During the last century different kinds of synthesis methods have emerged.
+ The subtractive synthesis however, appears to be the most common one.
+ But how can these sounds actually be synthesized? This question will be
+ examined in the following.
 \end_layout
 
 \begin_layout Section
@@ -1778,14 +1787,29 @@ A modular synthesizer is an electronic instrument, where sound generators,
 Analog Synthesis
 \end_layout
 
+\begin_layout Standard
+The discussed theoretical concepts can generally be applied to analog and
+ digital synthesis.
+ In this chapter 
+\end_layout
+
 \begin_layout Section
 General
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 In the context of audio electronics it is important to be know that sound
- signals are nothing but currents.
- 
+ signals are nothing but alternating currents.
+\end_layout
+
+\end_inset
+
+ Everything that Often a distinction between audio signals and control signals
+ is made
 \end_layout
 
 \begin_layout Standard
@@ -2738,6 +2762,10 @@ Note Source
 Output
 \end_layout
 
+\begin_layout Section
+Example Patches
+\end_layout
+
 \begin_layout Chapter
 Conclusion
 \end_layout
@@ -2747,16 +2775,13 @@ Summary
 \end_layout
 
 \begin_layout Standard
-This paper constitutes an attempt to summarize what appeared to be the most
- important facts and information on the topics of history, theory and electronic
-s during the research on analog synthesis.
+This paper describes an attempt to present what appeared to be the most
+ significant information on the topics of history, theory and electronics
+ of analog synthesis during a research period.
  Of course for all of the discussed could only scratch the surface.
- Even only the topic of active filters circuits can (and does) fill entire
+ Even only the topic of active filter circuits can (and does) fill entire
  books.
-\end_layout
-
-\begin_layout Standard
-Accompanying this research a small synthesizer prototype has been set up,
+ Accompanying this research a small synthesizer prototype has been set up,
  making use of the knowledge aquired during the research.
 \end_layout
 
@@ -2765,8 +2790,31 @@ Results
 \end_layout
 
 \begin_layout Standard
+The objective to create a functional prototype can be considered a complete
+ success.
+ The synthesizer that was built is a lot of fun to experiment with, which
+ was one of the initial goals also.
+ Even though it is practically just a self oscillating filter, it offers
+ a lot of possibilities for experimental sound design.
+ Due to the fact that the banana plugs are stackable, the two output signals
+ can be split several times to voltage control resonance and cutoff of each
+ filter stage.
+ Also various types of feedback can be generated.
+ 
+\end_layout
+
+\begin_layout Standard
+This project provides a great basis for further sound experimentation.
+ Because of its modular setup, there is lots of space for further modules,
+ although the requirements for power supply and case size will increase
+ with the number of modules.
+ Next up the construction of an oscillator module is planned as soon as
+ time and monetary means allow it.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 As mentioned in chapter 
@@ -2839,11 +2887,23 @@ The process of writing this paper has been an unexpectedly rewarding and
 \end_layout
 
 \begin_layout Section*
-Thanks
+Acknowledgment
 \end_layout
 
 \begin_layout Standard
-Thanks to Eddi, Derek, Befaco, Richard, David
+At first I want to thank Fabian Gawlick and Sebastian Metzner for introducing
+ me to the topics of electronical engineering and sound synthesis.
+ I would like to thank Edmund Heineke Jaek for teaching me a lot about amplifica
+tion and helping me with the power supply for the prototype.
+ I am very grateful to Diego, Jano and Victor from befaco for their awesome
+ workshop and for helping me with a lot of tips and literature on the discussed
+ topics.
+ A big thank you goes out to Derek Holzer, who gave me an extended introduction
+ into his self constructed modular system and shared some valuable sound
+ design concepts.
+ Also I want to thank Richard Pannek, David Markwart, Roosa Hämäläinnen
+ and Vicki Schmatolla for proof reading and their feedback on this paper.
+ Lastly I want to thank SAE institute for making this project possible.
 \end_layout
 
 \begin_layout Standard
@@ -2888,7 +2948,7 @@ Appendix
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 urs hegemann
