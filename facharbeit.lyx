@@ -382,8 +382,26 @@ Its goal is to convey an understanding of the inner workings of electronic
  functional modular synthesizer setup that is fun to play and experiment
  with.
  The intention was to investigate the possibilities and limits in designing
- and building an analog sound device for someone, who had not been in contact
- with analog synthesizers, let alone building electronics devices before.
+ and building an analog sound device for someone,
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+I think the 
+\begin_inset Quotes eld
+\end_inset
+
+,
+\begin_inset Quotes erd
+\end_inset
+
+ should not be here
+\end_layout
+
+\end_inset
+
+ who had not been in contact with analog synthesizers, let alone building
+ electronics devices before.
  The project was inspired by the film 
 \emph on
 moog
@@ -411,8 +429,18 @@ Chapter Overview
 \end_layout
 
 \begin_layout Standard
-The first chapter represents the research on the historical background of
- analog synthesizers since the beginning of the twentieth century.
+The first chapter
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Isn't it the second chapter you mean?
+\end_layout
+
+\end_inset
+
+ represents the research on the historical background of analog synthesizers
+ since the beginning of the twentieth century.
  It was tried to outline important milestones in the historic development
  from the first electronic sound generating devices until a point in time
  when manufacturers of modular synthesizers have developed a profitable
@@ -492,7 +520,17 @@ cite[p.~12]{Manning1985}
 
 \begin_layout Standard
 Around 1900 american Thaddeus Cahill initiated a new era of music by inventing
- a 200 ton machine known as the Dynamophone or Thelharmonium 
+ a 200 ton
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+ton like the unit of measure of weight?
+\end_layout
+
+\end_inset
+
+ machine known as the Dynamophone or Thelharmonium 
 \begin_inset ERT
 status open
 
@@ -808,9 +846,19 @@ The german engineer Harald Bode contributed to the design of several new
  He was primarily interested in providing tools for a wide range of musicians,
  which is why his contributions straddled between the two major design tradition
 s of new sounds versus imitation of traditional ones.
- He turned out to be one of central figures in the history of electronic
- music, since he was also one of the primary engineers in establishing the
- classic tape music studio in europe 
+ He turned out to be one of 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+the
+\end_layout
+
+\end_inset
+
+ central figures in the history of electronic music, since he was also one
+ of the primary engineers in establishing the classic tape music studio
+ in europe 
 \begin_inset ERT
 status open
 
@@ -951,7 +999,33 @@ Around the same time the outstanding guitarist and inventor Les Paul became
  system consisting of a number of electronic modules for sound modification
  in late 1959 through 1960.
  His system featured ring modulator devices, envelope followers and generators,
- voltage-controlled amplifiers, filters, mixers and others 
+ voltage-controlled amplifiers, filters, mixers and others
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+I think it should be 
+\begin_inset Quotes eld
+\end_inset
+
+and other
+\begin_inset Quotes erd
+\end_inset
+
+ instead of 
+\begin_inset Quotes eld
+\end_inset
+
+others
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset ERT
 status open
 
@@ -985,8 +1059,17 @@ cite[p.~20]{Dunn1992}
 \end_layout
 
 \begin_layout Standard
-In 1963 Robert Moog, a passionate inventor from Ithaca, New York, was selling
- kits of transistorized Theremins 
+In 1963 Robert Moog, a passionate inventor from Ithaca, New York
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+perhaps you could add the country too?
+\end_layout
+
+\end_inset
+
+, was selling kits of transistorized Theremins 
 \begin_inset ERT
 status open
 
@@ -1149,8 +1232,26 @@ citealp[p.~22]{Dunn1992}
 synthesizer
 \emph default
  ever since.
- It seemed much more interesting to emphasize new timbral possibilities
- and stress the complexity that could arise from randomness.
+ It seemed
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+I assume you mean something like 
+\begin_inset Quotes eld
+\end_inset
+
+it seemed to him
+\begin_inset Quotes erd
+\end_inset
+
+? Or was it something which seemed so to everybody?
+\end_layout
+
+\end_inset
+
+ much more interesting to emphasize new timbral possibilities and stress
+ the complexity that could arise from randomness.
  At the same time Buchla was fascinated with designing control devices other
  than the standard keyboard, which Moog decided to use for playing 
 \begin_inset ERT
@@ -1254,6 +1355,17 @@ vspace*{-2em}
 
  In 1966 Bob Moogs first production model was available from the business
  R.A.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Should we have a space between the R.
+ and A.?
+\end_layout
+
+\end_inset
+
  Moog Co.
  that he had founded 
 \begin_inset ERT
@@ -1487,6 +1599,17 @@ cite[p.~55]{Ruschkowski1990}
  the high-low time ratio can be accessed.
  This has a distinct influence on the wave's timbre.
  In this case, the square becomes a pulse waveform.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+It would be cool to have a figure here which would show the 4 waves.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1783,8 +1906,33 @@ General
 \end_layout
 
 \begin_layout Standard
-In the context of audio electronics it is important to be know that sound
- signals are nothing but currents.
+In the context of audio electronics it is important to be know 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+I assume you wanted to write 
+\begin_inset Quotes eld
+\end_inset
+
+it is important to know
+\begin_inset Quotes erd
+\end_inset
+
+ without the 
+\begin_inset Quotes eld
+\end_inset
+
+be
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ that sound signals are nothing but currents.
  
 \end_layout
 
@@ -1806,6 +1954,24 @@ Rotary Knob
 
 \begin_layout Standard
 intermodular stuff like buffering 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+a word like 
+\begin_inset Quotes eld
+\end_inset
+
+stuff
+\begin_inset Quotes erd
+\end_inset
+
+ sounds misplaced in a well written paper
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1830,7 +1996,18 @@ Natural Resonance
 \begin_layout Standard
 The most basic form of an oscillator circuit producing a sawtooth signal
  can be realized with just a few parts.
- A current charges a capacitor at a certain rate.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+It seems the following sentences seem to be more a list then a normal text,
+ perhaps you should format them as a ordered list?
+\end_layout
+
+\end_inset
+
+A current charges a capacitor at a certain rate.
  Between the electrodes of the capacitor a voltage potential rises.
  The voltage is constantly compared with a reference voltage by a detector
  (Schmitt trigger).
@@ -2366,22 +2543,89 @@ y manufactured circuit boards for this project as opposed to elaborating
 \end_layout
 
 \begin_layout Standard
-During the research phase of this project the author found out about a modular
- synthesizer building workshop taking place in berlin monthly.
+During the research phase of this project the author found out about 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+the author foud out about
+\begin_inset Quotes erd
+\end_inset
+
+ sounds weird, try to find something less personal like 
+\begin_inset Quotes eld
+\end_inset
+
+it came to the authors attention that
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ a modular synthesizer building workshop taking place in berlin monthly.
  It is organized by a spanish collective from barcelona called 
 \emph on
 befaco
 \emph default
  (http://befaco.org/).
- At the workshop it was possible to acquire various module kits containing
- all necessary parts and also receive tips and support while assembling
- them.
+ At the workshop it was possible
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+either 
+\begin_inset Quotes eld
+\end_inset
+
+at this workshop it was possible
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+at the workshop it is possible
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ to acquire various module kits containing all necessary parts and also
+ receive tips and support while assembling them.
  
 \end_layout
 
 \begin_layout Standard
-Since the budget for this project was limited, it was tried to arrange a
- smaller setup that would still offer lots of sound design possibilities.
+Since the budget for this project was limited
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+perhaps 
+\begin_inset Quotes eld
+\end_inset
+
+Because of budget limitations
+\begin_inset Quotes erd
+\end_inset
+
+ would sound nicer
+\end_layout
+
+\end_inset
+
+, it was tried to arrange a smaller setup that would still offer lots of
+ sound design possibilities.
 \end_layout
 
 \begin_layout Standard
@@ -2410,7 +2654,25 @@ There are several formats for module sizes, power supply plugs or patchchord
  with a height of 128.5mm.
  These EuroRack modules use jack connectors for patching.
  A different size format often used in the DIY modular synth scene is the
- one the serge synthesizers use.
+ one the serge
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+what are 
+\begin_inset Quotes eld
+\end_inset
+
+serge synthesizers
+\begin_inset Quotes erd
+\end_inset
+
+? I don't think they were introduced yet?
+\end_layout
+
+\end_inset
+
+ synthesizers use.
  They use banana jack connectors instead of mini jack for patching, which
  have the possibility of stacking banana connectors on top of each other
  and splitting the signal without having to use a multiplier module.
@@ -2523,6 +2785,15 @@ cite[p.~74]{Sontheimer2004}
 \end_inset
 
 .
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+I assume the dot here should be removed?
+\end_layout
+
+\end_inset
+
  and mounted onto a perf board.
  Instead of the 7815 and 7915 voltage regulator ICs the 7812 and 7912 were
  used in order to get a ±12 volt power supply with a center tap for the
@@ -2552,6 +2823,16 @@ status open
 
 \backslash
 pagebreak
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Why the pagebreak here? It looks displaced.
 \end_layout
 
 \end_inset
@@ -2711,6 +2992,19 @@ When turning resonance up, at one point the filter begins to self-resonate
  Turning the resonance to the maximum, the filter goes into distortion and
  the wave becomes more square causing the sound to get more rough.
  The amount of distortion is visually represented by a red LED.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Will we get a complete schema somewhere in the appendix or something? The
+ description is nice to read but I'm quite sure one could not replicate
+ your prototype from this text alone.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
