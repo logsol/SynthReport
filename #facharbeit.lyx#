@@ -12,8 +12,11 @@
 \usepackage[authoryear]{natbib}
 \usepackage{titlesec}
 \usepackage{caption}
+\usepackage{hyperref}
 \usepackage{url}
 \usepackage{breakurl}
+
+\def\UrlOrds{\do\*\do\-\do\~\do\'\do\"\do\-}
 
 % Important for page numbering
 \pagestyle{plain}
@@ -2905,7 +2908,7 @@ For etching the template would be transferred onto a copper board and put
 \end_layout
 
 \begin_layout Section
-BF-22 Filter
+BF-22 Filter 
 \end_layout
 
 \begin_layout Standard
@@ -2914,7 +2917,7 @@ lines 0
 placement R
 overhang 0in
 width "36text%"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -2941,7 +2944,7 @@ begin{center}
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Volumes/Hazel/Users/karlp/Pictures/bf22-2.png
+	filename graphics/bf22-2.png
 	display false
 	width 36text%
 
@@ -3005,9 +3008,9 @@ reference "sub:electronic-filter"
  Each stage features cutoff and frequency knobs, as well as several voltage
  control inputs for cutoff frequency and resonance, whereas the cutoff frequency
  input can be attenuated and inverted with one knob representing modulation
- depth (labeled: ×-1 ...
+ depth (labeled: X-1 ...
  0 ...
- ×1).
+ X1).
  The HP/LP switch determines, if the filter is used in high pass or low
  pass mode.
  

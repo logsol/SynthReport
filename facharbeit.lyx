@@ -2905,7 +2905,7 @@ For etching the template would be transferred onto a copper board and put
 \end_layout
 
 \begin_layout Section
-BF-22 Filter
+BF-22 Filter 
 \end_layout
 
 \begin_layout Standard
@@ -2914,7 +2914,7 @@ lines 0
 placement R
 overhang 0in
 width "36text%"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -2941,7 +2941,7 @@ begin{center}
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Volumes/Hazel/Users/karlp/Pictures/bf22-2.png
+	filename graphics/bf22-2.png
 	display false
 	width 36text%
 
