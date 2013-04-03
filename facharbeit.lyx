@@ -13,7 +13,13 @@
 \usepackage{titlesec}
 \usepackage{caption}
 \usepackage{url}
-\usepackage{breakurl}
+
+% for url breaks
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+
+\def\UrlFont{\footnotesize\ttfamily}
 
 % Important for page numbering
 \pagestyle{plain}
@@ -229,6 +235,11 @@ Berlin, Germany 2012
 
 \backslash
 
+\end_layout
+
+\begin_layout Plain Layout
+
+Words: 5929
 \end_layout
 
 \begin_layout Plain Layout
@@ -541,7 +552,7 @@ lines 0
 placement O
 overhang 0in
 width "4.5cm"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -578,20 +589,45 @@ begin{center}
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
+
+
+\backslash
+caption[
+\end_layout
+
+\begin_layout Plain Layout
+
 Leon Theremin performing the Aetherophone
 \end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
 
+\backslash
+newline 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
+
+
+\backslash
+url{http://www.npr.org/blogs/allsongs/2013/02/07/171385175/no-it-wasn-t-a-theremin
+-on-good-vibrations-remembering-paul-tanner
+\end_layout
+
+\begin_layout Plain Layout
+
+}]
+\end_layout
+
+\begin_layout Plain Layout
+
+{Leon Theremin performing the Aetherophone}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -756,20 +792,43 @@ begin{center}
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption[
+\end_layout
+
+\begin_layout Plain Layout
+
 Harald Bode tuning his first Melochord
 \end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
 
+\backslash
+newline 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
+
+
+\backslash
+url{http://cec.sonus.ca/econtact/13_4/bode_history.html}]
+\end_layout
+
+\begin_layout Plain Layout
+
+{Harald Bode tuning his first Melochord}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -1009,7 +1068,7 @@ lines 0
 placement I
 overhang 0in
 width "5cm"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -1046,20 +1105,39 @@ begin{center}
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
+
+
+\backslash
+caption[
+\end_layout
+
+\begin_layout Plain Layout
+
 Donald Buchla with a Series 100 system in the 1960's
 \end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
 
+\backslash
+newline 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
+
+
+\backslash
+url{http://www.soundonsound.com/sos/dec05/articles/buchla200e.htm}]
+\end_layout
+
+\begin_layout Plain Layout
+
+{Donald Buchla with a Series 100 system in the 1960's}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -1161,7 +1239,7 @@ lines 0
 placement O
 overhang 0in
 width "5cm"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -1198,24 +1276,43 @@ begin{center}
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\emph on
-Switched-On Bach
-\emph default
- LP artwork
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset ERT
 status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption[
+\end_layout
+
+\begin_layout Plain Layout
+
+Switched-On Bach LP artwork
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newline 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{http://www.wendycarlos.com/discs.html}]
+\end_layout
+
+\begin_layout Plain Layout
+
+{Switched-On Bach LP artwork}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -1453,6 +1550,10 @@ cite[p.~55]{Ruschkowski1990}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
@@ -1502,6 +1603,11 @@ end{center}
 
 \begin_layout Plain Layout
 Abstract circuit scheme of a basic sawtooth oscillator
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1992,7 +2098,13 @@ newline
 
 \begin_layout Plain Layout
 
-x]
+
+\backslash
+protect{
+\backslash
+cite[Ch.
+ 5B, p.
+ 3]{Hutchins1975}}]
 \end_layout
 
 \begin_layout Plain Layout
@@ -2093,7 +2205,13 @@ newline
 
 \begin_layout Plain Layout
 
-x]
+
+\backslash
+protect{
+\backslash
+cite[Ch.
+ 5B, p.
+ 3]{Hutchins1975}}]
 \end_layout
 
 \begin_layout Plain Layout
@@ -2525,7 +2643,11 @@ newline
 
 \begin_layout Plain Layout
 
-x]
+
+\backslash
+protect{
+\backslash
+cite[p.~41]{Anwander2011}}]
 \end_layout
 
 \begin_layout Plain Layout
@@ -3335,7 +3457,7 @@ vspace*{-2em}
 
 \end_inset
 
- This module is still an experimental stage.
+ This module is still at an experimental stage.
  The idea was to use a digital microprocessor to be able to connect a keyboard
  to the synthesizer and play it via MIDI.
  To achieve this the implementation of an Arduino Uno was planned.
@@ -3355,7 +3477,7 @@ Conveniently the Arduino must be provided with a 9-12 volt power supply,
 The MIDI input communication has been established by the usage of a 6N138
  optocoupler, that isolates the Arduino circuit from the MIDI device.
  On the software side the Arduino MIDI Library v3.2 has been included, which
- takes care of interpreting the serial digital data arriving at the arduinos
+ takes care of interpreting the serial digital data arriving at the Arduinos
  RX pin.
  
 \end_layout
@@ -3371,8 +3493,8 @@ What needs to be done next is converting the desired MIDI messags into control
  One way would be to create a high frequency pulse width modulated signal
  and adding a low pass filter to convert it to a stationary voltage.
  This may have the disadvantage of getting a slight portamento effect though.
- The other way would be to convert the possible 128 states of the note on
- message into seven binary values.
+ The other way would be to convert the possible 128 note values of the note
+ on message into seven binary values.
  These would be transmitted onto seven respective output pins.
  A digital to analog converter (DAC) would then generate the analog output
  voltage.
@@ -3490,11 +3612,49 @@ status open
 pagebreak
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+List of Figures
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+makeatletter 
+\end_layout
+
 \begin_layout Plain Layout
 
 
 \backslash
-listoffigures
+let
+\backslash
+@cftmakeloftitle
+\backslash
+relax 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+listoffigures% Print List of Figures 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeatother}
 \end_layout
 
 \end_inset
@@ -3576,13 +3736,13 @@ end{tabular}
 
 \end_layout
 
-\begin_layout Chapter*
-Appendix
-\end_layout
-
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
+
+\begin_layout Plain Layout
+Appendix
+\end_layout
 
 \begin_layout Plain Layout
 urs hegemann
