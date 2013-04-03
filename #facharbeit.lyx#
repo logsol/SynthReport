@@ -12,6 +12,8 @@
 \usepackage[authoryear]{natbib}
 \usepackage{titlesec}
 \usepackage{caption}
+\usepackage{url}
+\usepackage{breakurl}
 
 % Important for page numbering
 \pagestyle{plain}
@@ -72,7 +74,16 @@
 \float_placement H
 \paperfontsize 12
 \spacing onehalf
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize a4paper
 \use_geometry true
 \use_amsmath 1
@@ -382,7 +393,7 @@ Its goal is to convey an understanding of the inner workings of electronic
  functional modular synthesizer setup that is fun to play and experiment
  with.
  The intention was to investigate the possibilities and limits in designing
- and building an analog sound device for someone, who had not been in contact
+ and building an analog sound device for someone who had not been in contact
  with analog synthesizers, let alone building electronics devices before.
  The project was inspired by the film 
 \emph on
@@ -410,8 +421,12 @@ Chapter Overview
 \end_layout
 
 \begin_layout Standard
-The first chapter represents the research on the historical background of
- analog synthesizers since the beginning of the twentieth century.
+The chapter 
+\emph on
+Historic Evolution of the Synthesizer
+\emph default
+ represents the research on the historical background of analog synthesizers
+ since the beginning of the twentieth century.
  It was tried to outline important milestones in the historic development
  from the first electronic sound generating devices until a point in time
  when manufacturers of modular synthesizers have developed a profitable
@@ -426,31 +441,6 @@ Subsequently the most important concepts of subtractive synthesis are summarized
  In chapter three these concepts are taken one step further and discussed
  in the context of electronic circuitry.
  Lastly the process of building an electronic synthesizer prototype is described.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-The process of building the prototype includes working with an oscilloscope
- to examine and verify the shape of various waveforms before and after modulatio
-n.
- 
-\end_layout
-
-\begin_layout Plain Layout
-To make it playable with a keyboard, a MIDI input module is added.
- It features an Arduino microprocessor to convert digital MIDI messages
- into control voltage outputs that other modules can connect to.
- It is the only digital component of the synthesizer, while tone generation
- and processing are analog.
- 
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Chapter
@@ -491,7 +481,7 @@ cite[p.~12]{Manning1985}
 
 \begin_layout Standard
 Around 1900 american Thaddeus Cahill initiated a new era of music by inventing
- a 200 ton machine known as the Dynamophone or Thelharmonium 
+ a machine known as the Dynamophone or Thelharmonium 
 \begin_inset ERT
 status open
 
@@ -505,9 +495,10 @@ cite[p.~19]{Humpert1987}
 \end_inset
 
 .
- Working against incredible technical difficulties, he succeeded to create
- an electrical sound generator, that produced alternating sine wave shaped
- currents of different audio frequencies.
+ Working against incredible technical difficulties he succeeded to create
+ an electrical sound generator with a weight of around 200 metric tons.
+ It produced alternating sine wave shaped currents of different audio frequencie
+s.
  A modified electrical dynamo was used in conjunction with several specially
  geared shafts and inductors to create the signals.
  The Dynamophone could be played with a polyphonic keyboard and featured
@@ -807,7 +798,7 @@ The german engineer Harald Bode contributed to the design of several new
  He was primarily interested in providing tools for a wide range of musicians,
  which is why his contributions straddled between the two major design tradition
 s of new sounds versus imitation of traditional ones.
- He turned out to be one of central figures in the history of electronic
+ He turned out to be one of the central figures in the history of electronic
  music, since he was also one of the primary engineers in establishing the
  classic tape music studio in europe 
 \begin_inset ERT
@@ -871,19 +862,6 @@ cite[p.~19]{Dunn1992}
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Sakbutt (1948) Hugh LeCaine
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 The First Synthesizers
 \end_layout
@@ -921,24 +899,7 @@ cite[p.~15-16]{Dunn1992}
 \emph on
 Victor
 \emph default
- was given
-\emph on
- 
-\emph default
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cite{Bear:website}
-\end_layout
-
-\end_inset
-
-.
+ was given.
 \end_layout
 
 \begin_layout Standard
@@ -950,7 +911,7 @@ Around the same time the outstanding guitarist and inventor Les Paul became
  system consisting of a number of electronic modules for sound modification
  in late 1959 through 1960.
  His system featured ring modulator devices, envelope followers and generators,
- voltage-controlled amplifiers, filters, mixers and others 
+ voltage-controlled amplifiers, filters, mixers and other 
 \begin_inset ERT
 status open
 
@@ -984,8 +945,8 @@ cite[p.~20]{Dunn1992}
 \end_layout
 
 \begin_layout Standard
-In 1963 Robert Moog, a passionate inventor from Ithaca New York was selling
- kits of transistorized Theremins 
+In 1963 Robert Moog, a passionate inventor from Ithaca, New York, United
+ States, was selling kits of transistorized Theremins 
 \begin_inset ERT
 status open
 
@@ -1151,7 +1112,7 @@ citealp[p.~22]{Dunn1992}
 synthesizer
 \emph default
  ever since.
- It seemed much more interesting to emphasize new timbral possibilities
+ To him it seemed much more interesting to emphasize new timbral possibilities
  and stress the complexity that could arise from randomness.
  At the same time Buchla was fascinated with designing control devices other
  than the standard keyboard, which Moog decided to use for playing 
@@ -1169,6 +1130,29 @@ cite[p.~20]{Dunn1992}
 
 .
  
+\begin_inset Quotes eld
+\end_inset
+
+Buchla has maintained his unique design philosophy over the years producing
+ a series of highly advanced instruments often incorporating hybrid digital
+ circuitry and unique control interfaces.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite[p.~23]{Dunn1992}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1177,7 +1161,7 @@ lines 0
 placement O
 overhang 0in
 width "5cm"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -1403,28 +1387,6 @@ Oscillators that swing at an infrasonic frequency - meaning a frequency
  case a distinction between oscillator and LFO is unnecessary.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Difference between poly and monophonic synthesis (voices, mono: store last
- note value) Voices
-\end_layout
-
-\begin_layout Plain Layout
-unison
-\end_layout
-
-\begin_layout Plain Layout
-sync
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection
 Characteristics of Common Waveforms
 \end_layout
@@ -1466,17 +1428,8 @@ triangle Composed of only odd harmonics, the triangle wave has a much softer,
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-square Also known as rectangle, 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-clearify difference to triangle 
-\end_layout
-
-\end_inset
-
- the square wave also consists of odd harmonics only.
+square Also known as rectangle, the square wave also consists of odd harmonics
+ only, but the level distribution of its harmonics is different.
  Its timbre reminds of woodwind instruments 
 \begin_inset ERT
 status open
@@ -1496,6 +1449,69 @@ cite[p.~55]{Ruschkowski1990}
  the high-low time ratio can be accessed.
  This has a distinct influence on the wave's timbre.
  In this case, the square becomes a pulse waveform.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/waveforms.jpg
+	display false
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Abstract circuit scheme of a basic sawtooth oscillator
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1504,8 +1520,30 @@ Noise Generation
 
 \begin_layout Standard
 A different approach on the creation of source audio material is resembled
- by noise generators, which generate random non-periodic frequencies.
- Therefore the signal contains no tonal information.
+ by noise generators.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+In very loose terms, noise is a complex waveform with components of every
+ frequency, each attaining a completely random amplitude at any give instant.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite[p.~1]{Henry2009}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -1773,9 +1811,9 @@ The Modular Approach
 \end_layout
 
 \begin_layout Standard
-A modular synthesizer is an electronic instrument, where sound generators,
- processors and control facilities are presented in separate independent
- entities called modules.
+A modular synthesizer is an instrument, where sound generators, processors
+ and control facilities are presented in separate independent entities called
+ modules.
  These modules are not wired in a preconceived way, but connected together
  with patchchords.
  The second essential aspect is the concept of intermodular controllability,
@@ -1788,9 +1826,9 @@ Analog Synthesis
 \end_layout
 
 \begin_layout Standard
-The discussed theoretical concepts can generally be applied to analog and
- digital synthesis.
- In this chapter 
+The previously discussed theoretical concepts can generally be applied to
+ both analog and digital synthesisers.
+ In this chapter these concepts are transferred into the electronic context.
 \end_layout
 
 \begin_layout Section
@@ -1798,42 +1836,71 @@ General
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
+In digital synthesis audio signals and control signals are often being different
+iated.
+ This is because computing power can be saved by limiting the sample rate
+ for control signals, since they usually only require a fraction of the
+ amount of sampling values to get acceptable results.
+\end_layout
+
+\begin_layout Standard
+In the area of analog modular synthesis it is important to know that signals
+ are nothing but alternating and/or direct currents with voltages ranging
+ from -5 to +5 volts.
+ That is why there is no difference between audio and control signals.
+ This has a great impact on the extend of possibilities especially in modular
+ systems.
+ It for example means, that one oscillator can control the frequency of
+ a second oscillator with its output signal.
+ This is known as frequency-modulation or FM synthesis.
+\end_layout
+
+\begin_layout Standard
+However, when combining or mixing control and audio signals one should be
+ aware of the following phrase, stated by Donald Buchla: 
+\begin_inset Quotes eld
+\end_inset
+
+DC offset doesn't make any difference in the sound domain but it makes a
+ big difference in the structural domain, whereas harmonic distortion makes
+ very little difference in the control area but it can be very significant
+ in the audio areas.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
-In the context of audio electronics it is important to be know that sound
- signals are nothing but alternating currents.
+
+
+\backslash
+cite[p.~23]{Dunn1992}
 \end_layout
 
 \end_inset
 
- Everything that Often a distinction between audio signals and control signals
- is made
-\end_layout
 
-\begin_layout Standard
-Voltage 
-\end_layout
-
-\begin_layout Standard
-Control Voltage Audio Signal
-\end_layout
-
-\begin_layout Standard
-Current
-\end_layout
-
-\begin_layout Standard
-Rotary Knob
-\end_layout
-
-\begin_layout Standard
-intermodular stuff like buffering 
 \end_layout
 
 \begin_layout Section
 Modules
+\end_layout
+
+\begin_layout Standard
+In a modular synthesizer setup, all sound generating and processing modules
+ are aggregated and connected to a central power supply with a common ground.
+ Among the modular components the signals are transferred via patchchords.
+ The modules should be engineered to have the lowest possible output impedance
+ and a relatively high input impedance.
+ A common impedance ratio is 1:100.
+ 
+\end_layout
+
+\begin_layout Standard
+Below, the basic circuitry principles of some essential synthesizer components
+ will be examined.
 \end_layout
 
 \begin_layout Subsection
@@ -1848,16 +1915,16 @@ name "sub:electronic-oscillator"
 \end_layout
 
 \begin_layout Subsubsection
-Natural Resonance
+Natural Resonance 
 \end_layout
 
 \begin_layout Standard
-The most basic form of an oscillator circuit producing a sawtooth signal
- can be realized with just a few parts.
+The most kala simple form of an oscillator circuit producing a sawtooth
+ signal can be realized with just a few parts.
  A current charges a capacitor at a certain rate.
  Between the electrodes of the capacitor a voltage potential rises.
- The voltage is constantly compared with a reference voltage by a detector
- (Schmitt trigger).
+ Meanwhile the voltage is constantly compared with a reference voltage by
+ a detector (Schmitt trigger).
  Once it reaches the predefined threshold, an electronic switch (transistor)
  is activated.
  This switch short-circuits the capacitor and discharges it, causing the
@@ -1871,7 +1938,7 @@ The most basic form of an oscillator circuit producing a sawtooth signal
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -1908,24 +1975,40 @@ status open
 
 
 \backslash
+caption[
+\end_layout
+
+\begin_layout Plain Layout
+
+Abstract circuit scheme of a basic sawtooth oscillator
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newline 
+\end_layout
+
+\begin_layout Plain Layout
+
+x]
+\end_layout
+
+\begin_layout Plain Layout
+
+{Abstract circuit scheme of a basic sawtooth oscillator}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
 end{center}
 \end_layout
 
 \end_inset
 
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Abstract circuit scheme of a basic sawtooth oscillator
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1956,7 +2039,7 @@ cite[Ch.~5B, p.~3]{Hutchins1975}
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -1993,16 +2076,36 @@ status open
 
 
 \backslash
-end{center}
+caption[
 \end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
-
-\begin_inset Caption
+Circuit scheme of a simple triangle oscillator
+\end_layout
 
 \begin_layout Plain Layout
-Circuit scheme of a simple triangle oscillator
+
+
+\backslash
+newline 
+\end_layout
+
+\begin_layout Plain Layout
+
+x]
+\end_layout
+
+\begin_layout Plain Layout
+
+{Circuit scheme of a simple triangle oscillator}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
 \end_layout
 
 \end_inset
@@ -2188,7 +2291,7 @@ lines 0
 placement O
 overhang 0in
 width "5.5cm"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -2225,20 +2328,39 @@ begin{center}
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
+
+
+\backslash
+caption[
+\end_layout
+
+\begin_layout Plain Layout
+
 Active Sallen-Key low pass filter circuit scheme
 \end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
 
+\backslash
+newline 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
+
+
+\backslash
+url{http://de.wikipedia.org/wiki/Sallen-Key-Filter}]
+\end_layout
+
+\begin_layout Plain Layout
+
+{Active Sallen-Key low pass filter circuit scheme}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -2333,11 +2455,131 @@ cite[p.~198]{Lancaster1975}
 \end_layout
 
 \begin_layout Subsection
-Amplifier
+Envelope Generator
 \end_layout
 
-\begin_layout Subsection
-Envelope Generator
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement O
+overhang 0in
+width "7cm"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-2em} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/envelope.png
+	display false
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption[
+\end_layout
+
+\begin_layout Plain Layout
+
+Principle circuit diagram of an AR envelope 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newline 
+\end_layout
+
+\begin_layout Plain Layout
+
+x]
+\end_layout
+
+\begin_layout Plain Layout
+
+{Principle circuit diagram of an AR envelope }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-2em} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ The envelope generator is based on the principle of slew-rate limiting.
+ The rapid changes in the level of the gate voltage can be decelerated by
+ again using a resistor-capacitor element.
+ By using a potetiometer in the place of the resistor the charging time
+ and therefore the speed of the voltage alteration can be adjusted.
+ To get a typical attack-release (AR) envelope the charge and discharge
+ times should be adjusted seperately.
+ To achieve this two preceding potentiometers with a diode each should be
+ connected.
+ The diodes must be pointed in opposite directions (see figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:AR-envelope"
+
+\end_inset
+
+).
+ 
 \end_layout
 
 \begin_layout Chapter
@@ -2390,36 +2632,36 @@ y manufactured circuit boards for this project as opposed to elaborating
 \end_layout
 
 \begin_layout Standard
-During the research phase of this project the author found out about a modular
- synthesizer building workshop taking place in berlin monthly.
+During the research phase of this project it came to the authors attention,
+ that a modular synthesizer building workshop would be taking place in berlin
+ monthly.
  It is organized by a spanish collective from barcelona called 
 \emph on
 befaco
 \emph default
- (http://befaco.org/).
- At the workshop it was possible to acquire various module kits containing
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{http://befaco.org}
+\end_layout
+
+\end_inset
+
+).
+ At the workshop it is possible to acquire various module kits containing
  all necessary parts and also receive tips and support while assembling
  them.
  
 \end_layout
 
 \begin_layout Standard
-Since the budget for this project was limited, it was tried to arrange a
- smaller setup that would still offer lots of sound design possibilities.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Befaco, help, how well it is documented is important, why the filter was
- chosen, limited budget
-\end_layout
-
-\end_inset
-
-
+Due to budget limitations, it was tried to arrange a smaller setup that
+ would still offer lots of sound design possibilities.
 \end_layout
 
 \begin_layout Section
@@ -2433,39 +2675,16 @@ There are several formats for module sizes, power supply plugs or patchchord
  For example Doepfer's modules are only compatible with their EuroRack cases,
  with a height of 128.5mm.
  These EuroRack modules use jack connectors for patching.
- A different size format often used in the DIY modular synth scene is the
- one the serge synthesizers use.
- They use banana jack connectors instead of mini jack for patching, which
- have the possibility of stacking banana connectors on top of each other
+ In the DIY modular synth scene it is a common practice to use banana jack
+ connectors instead of mini jack for patching.
+ Those have the possibility of stacking the connectors on top of each other
  and splitting the signal without having to use a multiplier module.
- For this project a combination was chosen: The modules are EuroRack size,
- but using banana plugs.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-For tuned modules it is important to consider whether they use a volt per
- octave or volt per hertz characteristic.
-\end_layout
-
-\begin_layout Plain Layout
-Audio Signals ±5Volts 
-\end_layout
-
-\begin_layout Plain Layout
-Buffering 1:10 impedance ratio 
-\end_layout
-
-\end_inset
-
-
+ In this project the modules are EuroRack size, but use banana plugs.
+ 
 \end_layout
 
 \begin_layout Section
-Building and Testing
+Building
 \end_layout
 
 \begin_layout Standard
@@ -2484,47 +2703,6 @@ Soldering is a process of mounting electronic parts onto a circuit board
  A good temperature for the soldering iron is between 300° and 350° celsius.
  The iron should not be pressed onto the joint for too long, because there
  is a risk of destroying the component if it is sensitive to heat.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Research beginnings - Easy oscillation circuits.
- easy filters.
- how voltage controlled is the problem.
- How it had been decided not to design all circuits self, but instead use
- predesigned circuit boards in order to be able to get tuning stability
- and volt-per-octave possibilities.
-\end_layout
-
-\begin_layout Plain Layout
-It had been understood how designing circuits requires years of work and
- experience.
-\end_layout
-
-\begin_layout Plain Layout
-Module decicion, Getting the Circuit boards, Soldering, Getting Parts, General
- about parts (capacitors and resistors)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Oscilloscope, Multimeter, Tracking faults, measuring 
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -2546,7 +2724,6 @@ cite[p.~74]{Sontheimer2004}
 
 \end_inset
 
-.
  and mounted onto a perf board.
  Instead of the 7815 and 7915 voltage regulator ICs the 7812 and 7912 were
  used in order to get a ±12 volt power supply with a center tap for the
@@ -2593,7 +2770,7 @@ lines 0
 placement R
 overhang 0in
 width "22text%"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -2629,10 +2806,155 @@ begin{center}
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption[
+\end_layout
+
+\begin_layout Plain Layout
+
+Output module template 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{http://befaco.org}
+\end_layout
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+{Output module template}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-2em} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The panels for all modules were made from pre-cut aluminum plates with a
+ white varnish.
+ The labels for knobs and banana sockets are printed on the plates with
+ a method, that is similar to homemade circuit board etching
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+For etching the template would be transferred onto a copper board and put
+ into an acid bath.
+\end_layout
+
+\end_inset
+
+.
+ A mirror-inverted label template is printed onto a piece of high gloss
+ paper for inkjet printers - but with a laser printer.
+ It is cut and placed face down onto the upper side of the panel.
+ By thoroughly pressing down a hot flat iron (for ironing clothes) onto
+ the panel for a few minutes, the toner cartridge particles move to the
+ panel.
+ The paper residues need to be removed by placing the panel in some water
+ and rubbing them off with a sponge.
+ Afterwards the panel is sealed with transparent lacquer.
+ Once the panel is dried, the holes for the knobs, switches, etc.
+ can be prepunched and drilled.
+ Lastly all borholes are deburred.
+ 
+\end_layout
+
+\begin_layout Section
+BF-22 Filter
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement R
+overhang 0in
+width "36text%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-2.5em} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Volumes/Hazel/Users/karlp/Pictures/bf22-2.png
+	display false
+	width 36text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Output module template
+BF-22 filter module
 \end_layout
 
 \end_inset
@@ -2669,40 +2991,6 @@ vspace*{-2em}
 \end_layout
 
 \begin_layout Standard
-The panels for all modules were made from pre-cut aluminum plates with a
- white varnish.
- The labels for knobs and banana sockets are printed on the plates with
- a method, that is similar to homemade circuit board etching.
- A mirror-inverted label template is printed onto a piece of high gloss
- paper for inkjet printers - but with a laser printer.
- It is cut and placed face down onto the upper side of the panel.
- By thoroughly pressing down a hot flat iron (for ironing clothes) onto
- the panel for a few minutes, the toner cartridge particles move to the
- panel.
- The paper residues need to be removed by placing the panel in some water
- and rubbing them off with a sponge.
- Afterwards the panel is sealed with transparent lacquer.
- Once the panel is dried, the holes for the knobs, switches, etc.
- can be prepunched and drilled.
- Lastly all borholes are deburred.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-foto vom frontpanel ohne stecker
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-BF-22 Filter
-\end_layout
-
-\begin_layout Standard
 This module is an extended copy of the filter from the legendary Korg MS-20
  and is based upon the principle of the Sallen and Key filter (see chapter
  
@@ -2729,17 +3017,142 @@ reference "sub:electronic-filter"
 When turning resonance up, at one point the filter begins to self-resonate
  at the given cutoff frequency, which means that the filter can also be
  utilized as an oscillator.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{1.5em} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement R
+overhang 0in
+width "36text%"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-1em} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/bf22-board.png
+	display false
+	width 36text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+BF-22 main circuit board
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-2em} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
  Therefore a volt per octave input for the cutoff control voltage was added,
  to be able to control the oscillating frequency in a musical context.
- A look at the oscilloscope shows a sine like waveform with few overtones.
+ 
+\end_layout
+
+\begin_layout Standard
+A look at the oscilloscope shows a sine like waveform.
  Turning the resonance to the maximum, the filter goes into distortion and
  the wave becomes more square causing the sound to get more rough.
  The amount of distortion is visually represented by a red LED.
+ 
+\end_layout
+
+\begin_layout Standard
+Below the front panel sits an interface board where the knobs, switches,
+ LEDs and banana sockets are mounted to.
+ A thirty pin socket connects the interface board to the main circuit board,
+ which contains the signal processing circuitry.
+ The socket for the power supply sits on the very bottom.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+Will we get a complete schema somewhere in the appendix or something? The
+ description is nice to read but I'm quite sure one could not replicate
+ your prototype from this text alone.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 beispiel patch mit foto und beschreibung
@@ -2751,19 +3164,223 @@ beispiel patch mit foto und beschreibung
 \end_layout
 
 \begin_layout Section
-Midi Input
-\end_layout
-
-\begin_layout Standard
-Note Source
-\end_layout
-
-\begin_layout Section
 Output
 \end_layout
 
+\begin_layout Standard
+The output module is responsible for transforming the 
+\emph on
+hot
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The term hot signal is used commonly to describe signals with a relativly
+ high voltage, in this case ±5 volts.
+\end_layout
+
+\end_inset
+
+
+\emph default
+ synthesizer signal to a standard line level.
+ It can be used in a dual mono mode, picking up two seperate output signals
+ from tip and ring of the 6.35 mm output jack.
+ The mono switch splits the signal to tip and ring.
+ The phones output provides the output signal optimized for headphones.
+\end_layout
+
+\begin_layout Standard
+Additionally the module features a switch which activates a high pass filter.
+ The idea is to be able to protect speaker systems from high energy bass
+ signals.
+ In the lower section 3 banana to jack patch sockets were added.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{1.5em} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Example Patches
+MIDI Input
+\end_layout
+
+\begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement R
+overhang 0in
+width "36text%"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-3em} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/arduino-midi-in.jpg
+	display false
+	width 36text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption[
+\end_layout
+
+\begin_layout Plain Layout
+
+Arduino MIDI input circuit 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newline 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{http://www.notesandvolts.com/2012/01/fun-with-arduino-midi-input-basics.html}]
+\end_layout
+
+\begin_layout Plain Layout
+
+{Arduino MIDI input circuit}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-2em} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ This module is still an experimental stage.
+ The idea was to use a digital microprocessor to be able to connect a keyboard
+ to the synthesizer and play it via MIDI.
+ To achieve this the implementation of an Arduino Uno was planned.
+ Arduino is an open-source electronics prototyping platform with a ATMega168
+ microprocessor at its heart.
+ 
+\end_layout
+
+\begin_layout Standard
+Conveniently the Arduino must be provided with a 9-12 volt power supply,
+ which made the process of connecting it to the synthesizers power supply
+ easy.
+ Only the appropriate plug connection had to be put together.
+\end_layout
+
+\begin_layout Standard
+The MIDI input communication has been established by the usage of a 6N138
+ optocoupler, that isolates the Arduino circuit from the MIDI device.
+ On the software side the Arduino MIDI Library v3.2 has been included, which
+ takes care of interpreting the serial digital data arriving at the arduinos
+ RX pin.
+ 
+\end_layout
+
+\begin_layout Standard
+What needs to be done next is converting the desired MIDI messags into control
+ voltages.
+ The gate voltage would be easy to implement, because it can be represented
+ by a digital on/off state.
+ The realization of the pitch control voltage presents itself as more complex,
+ since the Arduino cannot output analog voltage values at its output pins
+ but only digital states.
+ One way would be to create a high frequency pulse width modulated signal
+ and adding a low pass filter to convert it to a stationary voltage.
+ This may have the disadvantage of getting a slight portamento effect though.
+ The other way would be to convert the possible 128 states of the note on
+ message into seven binary values.
+ These would be transmitted onto seven respective output pins.
+ A digital to analog converter (DAC) would then generate the analog output
+ voltage.
+\end_layout
+
+\begin_layout Standard
+Regardless of which method is chosen, at the end the voltage should be scaled
+ to conform the 1 volt per octave interface.
 \end_layout
 
 \begin_layout Chapter
@@ -2775,11 +3392,10 @@ Summary
 \end_layout
 
 \begin_layout Standard
-This paper describes an attempt to present what appeared to be the most
- significant information on the topics of history, theory and electronics
- of analog synthesis during a research period.
- Of course for all of the discussed could only scratch the surface.
- Even only the topic of active filter circuits can (and does) fill entire
+This paper is the result of a research on the topics of history, theory
+ and electronics of analog synthesis.
+ Of course in all of the discussed subjects only the surfaces could be scratched.
+ Even only the field of active filter circuitry can (and does) fill entire
  books.
  Accompanying this research a small synthesizer prototype has been set up,
  making use of the knowledge aquired during the research.
@@ -2810,49 +3426,6 @@ This project provides a great basis for further sound experimentation.
  with the number of modules.
  Next up the construction of an oscillator module is planned as soon as
  time and monetary means allow it.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-As mentioned in chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:building-introduction"
-
-\end_inset
-
- the process of building the prototype had not transpired as initially planned.
- 
-\end_layout
-
-\begin_layout Plain Layout
-cunstruction results - goals attained.
-\end_layout
-
-\begin_layout Plain Layout
-what could be done better?
-\end_layout
-
-\begin_layout Plain Layout
-what could be added, what are the next steps?
-\end_layout
-
-\begin_layout Plain Layout
-problems of with output knob.
- maybe powersupply.
-\end_layout
-
-\begin_layout Plain Layout
-describe the journey, discribe the difference and natururality of analog
- sound as opposed to the digital, which i only knew before.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section*
@@ -2907,7 +3480,22 @@ tion and helping me with the power supply for the prototype.
 \end_layout
 
 \begin_layout Standard
-\begin_inset FloatList figure
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+listoffigures
+\end_layout
 
 \end_inset
 
@@ -2937,9 +3525,55 @@ gement.
 \end_layout
 
 \begin_layout Standard
-My signature below constitutes my pledge that all of the writing is my own
- work, with the exception of those portions which are properly documented.
- 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{5em} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{lp{2em}l}  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{5cm}   && 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{5cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+cline{1-1}
+\backslash
+cline{3-3}  Place, Date     && Signature 
+\backslash
+end{tabular}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter*
