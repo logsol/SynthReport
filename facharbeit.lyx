@@ -1173,9 +1173,7 @@ status open
 
 
 \backslash
-cite[p.~117-118]{Manning1985}, 
-\backslash
-citealp[p.~22]{Dunn1992}
+cite[p.~117-118]{Manning1985}
 \end_layout
 
 \end_inset
@@ -1335,7 +1333,7 @@ vspace*{-2em}
 
 \end_inset
 
- In 1966 Bob Moogs first production model was available from the business
+ In 1966 Robert Moogs first production model was available from the business
  R.A.
  Moog Co.
  that he had founded 
@@ -1353,9 +1351,9 @@ cite[p.~20]{Dunn1992}
 
 .
  At this time Walter Carlos, an audio engineer from New York who adviced
- Bob Moog while perfecting his system, worked with Benjamin Folkman to produce
- an album of titles by Johann Sebastian Bach interpreted only with Moog
- synthesizers.
+ Robert Moog while perfecting his system, worked with Benjamin Folkman to
+ produce an album of titles by Johann Sebastian Bach interpreted only with
+ Moog synthesizers.
  With the title 
 \emph on
 Switched-on Bach
@@ -1408,8 +1406,10 @@ Theory of Subtractive Synthesis
 \begin_layout Standard
 During the last century different kinds of synthesis methods have emerged.
  The subtractive synthesis however, appears to be the most common one.
- But how can these sounds actually be synthesized? This question will be
- examined in the following.
+ It is a method of sound synthesis, where partials of the initially generated
+ signal are attenuated with a filter to change the timbre of the sound.
+ But how can these sounds actually be synthesized? And what exactly does
+ a filter do? These questions will be examined in the following.
 \end_layout
 
 \begin_layout Section
@@ -1419,7 +1419,7 @@ Sources
 \begin_layout Standard
 Acoustic events can generally be divided in two groups: noises and tones.
  Whereas tones - as opposed to noise - are classified as sound waves, that
- oscillate in a periodic manner.
+ have determined set of frequencies and oscillate in a periodic manner.
  However this is only a theoretical classification, since most natural sounds
  are a combination of the two 
 \begin_inset ERT
@@ -1447,7 +1447,7 @@ At the root of every artificial tone generating system there is an element
  that produces an oscillation.
  This element is mostly described as the oscillator, which represents the
  very source of what can be heard eventually.
- The oscillator produces a periodic wave, that moves between an amplitude-minima
+ The oscillator produces a wave, that moves between an amplitude-minima
  and -maxima.
  Its waveform (shape of the wave) determines the overtone structure and
  therefore the timbre of this basic source sound.
@@ -1839,8 +1839,10 @@ cite[p.~53]{Anwander2011}
  or LFO modulation on the cutoff.
  This cutoff frequency is an important parameter determining the frequency
  at which the signal begins to be attenuated.
- The slew rate sets the slope of the filter - meaning how abrubt frequencies
- are being cut.
+ The slope of the filter determines how abrubt frequencies are being cut.
+ Another common parameter is called resonance.
+ This controls the level of a feedback loop, emphasizing the timbre at the
+ cutoff frequency.
 \end_layout
 
 \begin_layout Standard
@@ -1865,16 +1867,6 @@ cite[p.~55]{Anwander2011}
 
 .
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-COVER RESONANCE!!!
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -1923,7 +1915,7 @@ A modular synthesizer is an instrument, where sound generators, processors
  These modules are not wired in a preconceived way, but connected together
  with patchchords.
  The second essential aspect is the concept of intermodular controllability,
- with which modules may modulate or regulate the behaviour of other modules.
+ with which modules may modulate or regulate other modules.
  
 \end_layout
 
@@ -1951,8 +1943,8 @@ iated.
 
 \begin_layout Standard
 In the area of analog modular synthesis it is important to know that signals
- are nothing but alternating and/or direct currents with voltages ranging
- from -5 to +5 volts.
+ are nothing but alternating and/or direct currents usually with voltages
+ ranging from -5 to +5 volts.
  That is why there is no difference between audio and control signals.
  This has a great impact on the extend of possibilities especially in modular
  systems.
@@ -2025,8 +2017,8 @@ Natural Resonance
 \end_layout
 
 \begin_layout Standard
-The most kala simple form of an oscillator circuit producing a sawtooth
- signal can be realized with just a few parts.
+The most simple form of an oscillator circuit producing a sawtooth signal
+ can be realized with just a few parts.
  A current charges a capacitor at a certain rate.
  Between the electrodes of the capacitor a voltage potential rises.
  Meanwhile the voltage is constantly compared with a reference voltage by
@@ -2330,6 +2322,8 @@ ng currents through a capacitor becomes increasingly weak below a certain
  A signal simply passed through a capacitor resembles a high pass filter.
  If the capacitor is connected to the ground the high frequencies are short
  circuited and low frequencies remain in the signal path.
+ To control the charging time of the capacitor and therefore the cutoff
+ frequency a resistor is added.
  This is referred to as a resistor-capacitor (RC) element.
  This simple circuit represents a passive, first-order butterworth filter
  with a roll-off of 6 dB per octave.
@@ -2374,6 +2368,22 @@ cite[p.~57]{Anwander2011}
 
 .
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2652,7 +2662,9 @@ cite[p.~41]{Anwander2011}}]
 
 \begin_layout Plain Layout
 
-{Principle circuit diagram of an AR envelope }
+{Principle circuit diagram of an AR envelope 
+\backslash
+label{AR-envelope}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2696,7 +2708,7 @@ vspace*{-2em}
  The diodes must be pointed in opposite directions (see figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:AR-envelope"
+reference "AR-envelope"
 
 \end_inset
 
@@ -3738,7 +3750,7 @@ end{tabular}
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Appendix

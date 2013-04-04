@@ -1,0 +1,4 @@
+facharbeit-todo.txt
+
+- Repair DVD bibliography. (also in text)
+- rephrase the reader is guided through
