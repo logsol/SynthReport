@@ -1040,7 +1040,7 @@ cite{Fjellestad:movie}
  designing Theremins since the age of 14.
  A year later he built a transistor based voltage-controlled oscillator
  and amplifier for the composer Herbert Deutsch.
- This led moog to the presentation of a paper entitled 
+ This led Moog to the presentation of a paper entitled 
 \emph on
 Voltage-Controlled Electronic Music Modules
 \emph default
@@ -1162,7 +1162,7 @@ vspace*{-2em}
 
  Similar developments had been taking place at the west coast of the united
  states.
- Morton Subotnick and Ramon Sender started their carreer in electronic music
+ Morton Subotnick and Ramon Sender started their career in electronic music
  experimentation and became increasingly dissatisfied with the severe limitation
 s of traditional equipment at the San Francisco Tape Music Center.
  They sought out to hire a competent engineer and met Donald Buchla 
@@ -1333,7 +1333,7 @@ vspace*{-2em}
 
 \end_inset
 
- In 1966 Robert Moogs first production model was available from the business
+ In 1966 Robert Moog's first production model was available from the business
  R.A.
  Moog Co.
  that he had founded 
@@ -1350,7 +1350,7 @@ cite[p.~20]{Dunn1992}
 \end_inset
 
 .
- At this time Walter Carlos, an audio engineer from New York who adviced
+ At this time Walter Carlos, an audio engineer from New York who advised
  Robert Moog while perfecting his system, worked with Benjamin Folkman to
  produce an album of titles by Johann Sebastian Bach interpreted only with
  Moog synthesizers.
@@ -1359,7 +1359,7 @@ cite[p.~20]{Dunn1992}
 Switched-on Bach
 \emph default
  they demonstrated the performance of the system so convincingly, that they
- hit the popmusic charts and sold a million LP's 
+ hit the pop music charts and sold a million LP's 
 \begin_inset ERT
 status open
 
@@ -1377,7 +1377,7 @@ cite[p.~45]{Ruschkowski1990}
 \end_layout
 
 \begin_layout Standard
-By the end of the decade two other manufactrurers entered the market: ARP
+By the end of the decade two other manufacturers entered the market: ARP
  in America and EMS Ltd.
  in England.
  They had become major rivals for Moog and Buchla.
@@ -1497,7 +1497,7 @@ sine The most basic waveform is the sine wave.
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 sawtooth The sawtooth, also known as saw or ramp waveform sounds very bright,
- sometimes described as trompet-like 
+ sometimes described as trumpet-like 
 \begin_inset ERT
 status open
 
@@ -1747,7 +1747,7 @@ cite[p.~49]{Manning1985}
 
 .
  To get a more interesting sound, the signal can be manipulated in acoustic
- colour or dynamics by one or more processing units.
+ color or dynamics by one or more processing units.
 \end_layout
 
 \begin_layout Subsection
@@ -1787,7 +1787,7 @@ Sustain sets the output level for the time period after the decay phase
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-Release sets the length of the fade out after the note has endede
+Release sets the length of the fade out after the note has ended
 \end_layout
 
 \begin_layout Standard
@@ -1839,18 +1839,18 @@ cite[p.~53]{Anwander2011}
  or LFO modulation on the cutoff.
  This cutoff frequency is an important parameter determining the frequency
  at which the signal begins to be attenuated.
- The slope of the filter determines how abrubt frequencies are being cut.
+ The slope of the filter determines how abrupt frequencies are being cut.
  Another common parameter is called resonance.
  This controls the level of a feedback loop, emphasizing the timbre at the
  cutoff frequency.
 \end_layout
 
 \begin_layout Standard
-Filters can generally be devided into two categories: Low pass and high
- pass filters (also called high cut and low cut).
- To get a bandpass filter, low- and high pass are connected in series.
- When connected parallely, they become a bandstop or bandreject filter.
- Lastly the allpass filter should be mentioned, which does not change the
+Filters can generally be divided into two categories: Low pass and high
+ pass (also called high cut and low cut).
+ To get a band pass, low- and high pass are connected in series.
+ When connected in parallel, they become a band stop or band reject filter.
+ Lastly the all pass filter should be mentioned, which does not change the
  frequency spectrum but merely influences the phase of the signal around
  its cutoff 
 \begin_inset ERT
@@ -1899,7 +1899,7 @@ cite[Ch.~1A, p.~5]{Hutchins1975}
 
 \begin_layout Standard
 Sequencers on the other hand are programmable controllers.
- They are not dependend upon a manual interaction except for their programming
+ They are not dependent upon a manual interaction except for their programming
  and activation.
  
 \end_layout
@@ -1912,9 +1912,9 @@ The Modular Approach
 A modular synthesizer is an instrument, where sound generators, processors
  and control facilities are presented in separate independent entities called
  modules.
- These modules are not wired in a preconceived way, but connected together
- with patchchords.
- The second essential aspect is the concept of intermodular controllability,
+ These modules are not wired in a preconceived way, but are connected with
+ patch chords.
+ The second essential aspect is the concept of inter-modular controllability,
  with which modules may modulate or regulate other modules.
  
 \end_layout
@@ -1925,8 +1925,9 @@ Analog Synthesis
 
 \begin_layout Standard
 The previously discussed theoretical concepts can generally be applied to
- both analog and digital synthesisers.
- In this chapter these concepts are transferred into the electronic context.
+ both analog and digital synthesizers.
+ In this chapter some of these concepts are transferred into the electronic
+ context.
 \end_layout
 
 \begin_layout Section
@@ -1989,7 +1990,7 @@ Modules
 \begin_layout Standard
 In a modular synthesizer setup, all sound generating and processing modules
  are aggregated and connected to a central power supply with a common ground.
- Among the modular components the signals are transferred via patchchords.
+ Among the modular components the signals are transferred via patch chords.
  The modules should be engineered to have the lowest possible output impedance
  and a relatively high input impedance.
  A common impedance ratio is 1:100.
@@ -2027,7 +2028,7 @@ The most simple form of an oscillator circuit producing a sawtooth signal
  is activated.
  This switch short-circuits the capacitor and discharges it, causing the
  output voltage to drop back to its initial potential.
- This is happening continiously, wheras the rate of the repetition determines
+ This is happening continuously, whereas the rate of the repetition determines
  the frequency of the generated signal.
  
 \end_layout
@@ -2229,10 +2230,10 @@ end{center}
 \end_layout
 
 \begin_layout Standard
-Either of these two waveforms can be waveshaped into to other common basic
+Either of these two waveforms can be wave-shaped into to other common basic
  waveforms.
- All required waveshaping methods are fairly simple and their accuracy is
- sufficient for musical purposes.
+ All required wave shaping methods are fairly simple and their accuracy
+ is sufficient for musical purposes.
  The sine wave is an exception, because there is no simple electronic method
  of creating a pure sine wave.
  What is generally used is a rounded triangle, which gives at least 1 %
@@ -2332,7 +2333,7 @@ ng currents through a capacitor becomes increasingly weak below a certain
 status collapsed
 
 \begin_layout Plain Layout
- The moog filter for example concatenates four of these RC elements in a
+The Moog filter for example concatenates four of these RC elements in a
  row and regulates the resistor values 
 \begin_inset ERT
 status open
@@ -2699,10 +2700,10 @@ vspace*{-2em}
  The envelope generator is based on the principle of slew-rate limiting.
  The rapid changes in the level of the gate voltage can be decelerated by
  again using a resistor-capacitor element.
- By using a potetiometer in the place of the resistor the charging time
+ By using a potentiometer in the place of the resistor the charging time
  and therefore the speed of the voltage alteration can be adjusted.
  To get a typical attack-release (AR) envelope the charge and discharge
- times should be adjusted seperately.
+ times should be adjusted separately.
  To achieve this two preceding potentiometers with a diode each should be
  connected.
  The diodes must be pointed in opposite directions (see figure 
@@ -2758,7 +2759,7 @@ reference "sub:electronic-filter"
 \begin_layout Standard
 This is why it was decided to switch to the usage of pre-designed, professionall
 y manufactured circuit boards for this project as opposed to elaborating
- all the circuits on perf boards as originally intended.
+ all the circuits on perfboards as originally intended.
  This made the goal of intermodular controllability attainable more easyily.
  The downside of this approach are higher costs for boards and parts.
  However, the quality of the end-product is impressing.
@@ -2803,8 +2804,8 @@ Formats and Interfaces
 \end_layout
 
 \begin_layout Standard
-There are several formats for module sizes, power supply plugs or patchchord
- connectors which emerged out of the production lines of various module
+There are several formats for module sizes, power supply plugs or patch
+ chord connectors which emerged out of the production lines of various module
  manufacturers.
  For example Doepfer's modules are only compatible with their EuroRack cases,
  with a height of 128.5mm.
@@ -2858,7 +2859,7 @@ cite[p.~74]{Sontheimer2004}
 
 \end_inset
 
- and mounted onto a perf board.
+ and mounted onto a perfboard.
  Instead of the 7815 and 7915 voltage regulator ICs the 7812 and 7912 were
  used in order to get a ±12 volt power supply with a center tap for the
  ground.
@@ -2895,7 +2896,7 @@ pagebreak
 \end_layout
 
 \begin_layout Section
-Frontpanels
+Front panels
 \end_layout
 
 \begin_layout Standard
@@ -3034,7 +3035,7 @@ For etching the template would be transferred onto a copper board and put
  Afterwards the panel is sealed with transparent lacquer.
  Once the panel is dried, the holes for the knobs, switches, etc.
  can be prepunched and drilled.
- Lastly all borholes are deburred.
+ Lastly all boreholes are deburred.
  
 \end_layout
 
@@ -3284,19 +3285,6 @@ Will we get a complete schema somewhere in the appendix or something? The
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-beispiel patch mit foto und beschreibung
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Output
 \end_layout
@@ -3309,7 +3297,7 @@ hot
 status open
 
 \begin_layout Plain Layout
-The term hot signal is used commonly to describe signals with a relativly
+The term hot signal is used commonly to describe signals with a relatively
  high voltage, in this case ±5 volts.
 \end_layout
 
@@ -3318,7 +3306,7 @@ The term hot signal is used commonly to describe signals with a relativly
 
 \emph default
  synthesizer signal to a standard line level.
- It can be used in a dual mono mode, picking up two seperate output signals
+ It can be used in a dual mono mode, picking up two separate output signals
  from tip and ring of the 6.35 mm output jack.
  The mono switch splits the signal to tip and ring.
  The phones output provides the output signal optimized for headphones.
@@ -3489,14 +3477,14 @@ Conveniently the Arduino must be provided with a 9-12 volt power supply,
 The MIDI input communication has been established by the usage of a 6N138
  optocoupler, that isolates the Arduino circuit from the MIDI device.
  On the software side the Arduino MIDI Library v3.2 has been included, which
- takes care of interpreting the serial digital data arriving at the Arduinos
+ takes care of interpreting the serial digital data arriving at the Arduino's
  RX pin.
  
 \end_layout
 
 \begin_layout Standard
-What needs to be done next is converting the desired MIDI messags into control
- voltages.
+What needs to be done next is converting the desired MIDI messages into
+ control voltages.
  The gate voltage would be easy to implement, because it can be represented
  by a digital on/off state.
  The realization of the pitch control voltage presents itself as more complex,
@@ -3532,7 +3520,7 @@ This paper is the result of a research on the topics of history, theory
  Even only the field of active filter circuitry can (and does) fill entire
  books.
  Accompanying this research a small synthesizer prototype has been set up,
- making use of the knowledge aquired during the research.
+ making use of the knowledge acquired during the research.
 \end_layout
 
 \begin_layout Section*
@@ -3582,8 +3570,8 @@ The process of writing this paper has been an unexpectedly rewarding and
  Most notably the concepts of free composition - meaning allowing randomness
  and therefore putting oneself in the position of reacting to a musical
  system, influencing it in terms of tendencies, rather than controlling
- it with a predetermed mindset - has been something that really changed
- my perseption of musical creativity.
+ it with a predetermined mindset - has been something that really changed
+ my perception of musical creativity.
  This for me seems much more attainable in the analog world, where electrical
  components and signal chains can be brought to their tipping points, resulting
  in an unpredictable outcome.
@@ -3599,7 +3587,7 @@ Acknowledgment
 
 \begin_layout Standard
 At first I want to thank Fabian Gawlick and Sebastian Metzner for introducing
- me to the topics of electronical engineering and sound synthesis.
+ me to the topics of electronic engineering and sound synthesis.
  I would like to thank Edmund Heineke Jaek for teaching me a lot about amplifica
 tion and helping me with the power supply for the prototype.
  I am very grateful to Diego, Jano and Victor from befaco for their awesome
