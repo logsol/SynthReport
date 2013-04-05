@@ -239,7 +239,7 @@ Berlin, Germany 2012
 
 \begin_layout Plain Layout
 
-Words: 5929
+Words: 6043
 \end_layout
 
 \begin_layout Plain Layout
@@ -405,7 +405,7 @@ Its goal is to convey an understanding of the inner workings of electronic
  with.
  The intention was to investigate the possibilities and limits in designing
  and building an analog sound device for someone who had not been in contact
- with analog synthesizers, let alone building electronics devices before.
+ with analog synthesizers before, let alone building electronics devices.
  The project was inspired by the film 
 \emph on
 moog
@@ -626,7 +626,9 @@ url{http://www.npr.org/blogs/allsongs/2013/02/07/171385175/no-it-wasn-t-a-therem
 
 \begin_layout Plain Layout
 
-{Leon Theremin performing the Aetherophone}
+{Leon Theremin performing the Aetherophone 
+\backslash
+label{fig-theremin}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -654,8 +656,21 @@ vspace*{-2em}
 \end_layout
 
 \begin_layout Standard
-In 1924 the russian inventor Leon Theremin created the Aetherophone, which
- would later be known as the Theremin.
+In 1924 the russian inventor Leon Theremin created the Aetherophone (see
+ figure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{fig-theremin}
+\end_layout
+
+\end_inset
+
+), which would later be known as the Theremin.
  Unlike most electric instrument developed around that time, the Theremin
  had no keyboard.
  It was played merely by hand motion around two capacitive detecors, that
@@ -755,7 +770,7 @@ lines 0
 placement O
 overhang 0in
 width "4.5cm"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -827,7 +842,9 @@ url{http://cec.sonus.ca/econtact/13_4/bode_history.html}]
 
 \begin_layout Plain Layout
 
-{Harald Bode tuning his first Melochord}
+{Harald Bode tuning his first Melochord 
+\backslash
+label{fig-bode}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -853,13 +870,26 @@ vspace*{-2em}
 
 The german engineer Harald Bode contributed to the design of several new
  instruments from the 1930's on, like the warbo formant organ (1937) or
- later the Melochord (1949).
+ later the Melochord (1949) (see figure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{fig-bode}
+\end_layout
+
+\end_inset
+
+).
  He was primarily interested in providing tools for a wide range of musicians,
  which is why his contributions straddled between the two major design tradition
 s of new sounds versus imitation of traditional ones.
  He turned out to be one of the central figures in the history of electronic
- music, since he was also one of the primary engineers in establishing the
- classic tape music studio in europe 
+ music, since he was also one of the primary technicians in establishing
+ the classic tape music studio in Europe 
 \begin_inset ERT
 status open
 
@@ -970,7 +1000,7 @@ Around the same time the outstanding guitarist and inventor Les Paul became
  system consisting of a number of electronic modules for sound modification
  in late 1959 through 1960.
  His system featured ring modulator devices, envelope followers and generators,
- voltage-controlled amplifiers, filters, mixers and other 
+ voltage-controlled amplifiers, filters and other 
 \begin_inset ERT
 status open
 
@@ -1136,7 +1166,9 @@ url{http://www.soundonsound.com/sos/dec05/articles/buchla200e.htm}]
 
 \begin_layout Plain Layout
 
-{Donald Buchla with a Series 100 system in the 1960's}
+{Donald Buchla with a Series 100 system in the 1960's 
+\backslash
+label{fig-buchla}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1150,7 +1182,7 @@ end{center}
 
 
 \backslash
-vspace*{-2em} 
+vspace*{-3em} 
 \end_layout
 
 \end_inset
@@ -1165,7 +1197,21 @@ vspace*{-2em}
  Morton Subotnick and Ramon Sender started their career in electronic music
  experimentation and became increasingly dissatisfied with the severe limitation
 s of traditional equipment at the San Francisco Tape Music Center.
- They sought out to hire a competent engineer and met Donald Buchla 
+ They sought out to hire a competent engineer and met Donald Buchla (see
+ figure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{fig-buchla}
+\end_layout
+
+\end_inset
+
+) 
 \begin_inset ERT
 status open
 
@@ -1305,7 +1351,9 @@ url{http://www.wendycarlos.com/discs.html}]
 
 \begin_layout Plain Layout
 
-{Switched-On Bach LP artwork}
+{Switched-On Bach LP artwork 
+\backslash
+label{fig-switched}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1353,7 +1401,20 @@ cite[p.~20]{Dunn1992}
  At this time Walter Carlos, an audio engineer from New York who advised
  Robert Moog while perfecting his system, worked with Benjamin Folkman to
  produce an album of titles by Johann Sebastian Bach interpreted only with
- Moog synthesizers.
+ Moog synthesizers (see figure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{fig-switched}
+\end_layout
+
+\end_inset
+
+).
  With the title 
 \emph on
 Switched-on Bach
@@ -1419,7 +1480,7 @@ Sources
 \begin_layout Standard
 Acoustic events can generally be divided in two groups: noises and tones.
  Whereas tones - as opposed to noise - are classified as sound waves, that
- have determined set of frequencies and oscillate in a periodic manner.
+ have determined set of frequencies, which oscillate in a sinoidal manner.
  However this is only a theoretical classification, since most natural sounds
  are a combination of the two 
 \begin_inset ERT
@@ -1443,6 +1504,109 @@ Wave Oscillation
 \end_layout
 
 \begin_layout Standard
+\begin_inset Wrap figure
+lines 0
+placement O
+overhang 0in
+width "4.5cm"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-2em} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/waveforms.png
+	display false
+	width 4.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption[
+\end_layout
+
+\begin_layout Plain Layout
+
+Common oscillator waveforms
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newline 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+protect{
+\backslash
+cite[p.~49, edited by author]{Anwander2011}}]
+\end_layout
+
+\begin_layout Plain Layout
+
+{Common 
+\backslash
+linebreak oscillator waveforms 
+\backslash
+label{fig-waves}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-2em} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 At the root of every artificial tone generating system there is an element
  that produces an oscillation.
  This element is mostly described as the oscillator, which represents the
@@ -1452,9 +1616,22 @@ At the root of every artificial tone generating system there is an element
  Its waveform (shape of the wave) determines the overtone structure and
  therefore the timbre of this basic source sound.
  Oscillators often provide several waveforms between which it is possible
- to switch back and forth.
+ to switch back and forth (see figure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{fig-waves}
+\end_layout
+
+\end_inset
+
+).
  The pitch of the output signal is defined by the frequency of the wave
- and must oscillate between 20Hz and 20kHz in order for it to be audible
+ and must oscillate between 20 Hz and 20 kHz in order for it to be audible
  to humans 
 \begin_inset ERT
 status open
@@ -1490,13 +1667,13 @@ Characteristics of Common Waveforms
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-sine The most basic waveform is the sine wave.
+Sine The most basic waveform is the sine wave.
  It contains no overtones at all and sounds round and dull.
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-sawtooth The sawtooth, also known as saw or ramp waveform sounds very bright,
+Sawtooth The sawtooth, also known as saw or ramp waveform sounds very bright,
  sometimes described as trumpet-like 
 \begin_inset ERT
 status open
@@ -1519,13 +1696,13 @@ cite[p.~49]{Anwander2011}
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-triangle Composed of only odd harmonics, the triangle wave has a much softer,
+Triangle Composed of only odd harmonics, the triangle wave has a much softer,
  flute-like sound.
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-square Also known as rectangle, the square wave also consists of odd harmonics
+Square Also known as rectangle, the square wave also consists of odd harmonics
  only, but the level distribution of its harmonics is different.
  Its timbre reminds of woodwind instruments 
 \begin_inset ERT
@@ -1547,77 +1724,6 @@ cite[p.~55]{Ruschkowski1990}
  This has a distinct influence on the wave's timbre.
  In this case, the square becomes a pulse waveform.
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename graphics/waveforms.jpg
-	display false
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Abstract circuit scheme of a basic sawtooth oscillator
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -1658,18 +1764,18 @@ Noise Types
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-white Equal power density in any band of the frequency spectrum
+White Equal power density in any band of the frequency spectrum
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-pink Power density decreases by 3dB per octave; also referred to as 1/f
+Pink Power density decreases by 3dB per octave; also referred to as 1/f
  noise
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-brown Power density decreases by 6dB per octave; also referred to as 1/f
+Brown Power density decreases by 6dB per octave; also referred to as 1/f
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1757,7 +1863,7 @@ Dynamic Envelopes
 \begin_layout Standard
 The most important component responsible for shaping the dynamic structure
  of a note is the envelope.
- It is triggered by the the gate on/off signal and outputs a control signal
+ It is triggered by the gate on/off signal and outputs a control signal
  that fades between the different state phases of a note.
  The rapidity of these changes is adjusted by parameters, that represent
  these states.
@@ -1770,24 +1876,24 @@ The most important component responsible for shaping the dynamic structure
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-Attack sets how long the envelope signal rises after a note was triggered
+Attack Sets how long the envelope signal rises after a note was triggered
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-Decay sets how long it takes for the envelope signal to drop from its maximum
+Decay Sets how long it takes for the envelope signal to drop from its maximum
  to the sustain level after the attack phase was completed
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-Sustain sets the output level for the time period after the decay phase
+Sustain Sets the output level for the time period after the decay phase
  and before the gate signal was terminated
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-Release sets the length of the fade out after the note has ended
+Release Sets the length of the fade out after the note has ended
 \end_layout
 
 \begin_layout Standard
@@ -1841,7 +1947,7 @@ cite[p.~53]{Anwander2011}
  at which the signal begins to be attenuated.
  The slope of the filter determines how abrupt frequencies are being cut.
  Another common parameter is called resonance.
- This controls the level of a feedback loop, emphasizing the timbre at the
+ It controls the level of a feedback loop, emphasizing the timbre at the
  cutoff frequency.
 \end_layout
 
@@ -1949,8 +2055,8 @@ In the area of analog modular synthesis it is important to know that signals
  That is why there is no difference between audio and control signals.
  This has a great impact on the extend of possibilities especially in modular
  systems.
- It for example means, that one oscillator can control the frequency of
- a second oscillator with its output signal.
+ One of the consequences is that an oscillator can control the frequency
+ of a second oscillator with its output signal.
  This is known as frequency-modulation or FM synthesis.
 \end_layout
 
@@ -2019,7 +2125,20 @@ Natural Resonance
 
 \begin_layout Standard
 The most simple form of an oscillator circuit producing a sawtooth signal
- can be realized with just a few parts.
+ can be realized with just a few parts (see figure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{fig-sawosc}
+\end_layout
+
+\end_inset
+
+).
  A current charges a capacitor at a certain rate.
  Between the electrodes of the capacitor a voltage potential rises.
  Meanwhile the voltage is constantly compared with a reference voltage by
@@ -2102,7 +2221,9 @@ cite[Ch.
 
 \begin_layout Plain Layout
 
-{Abstract circuit scheme of a basic sawtooth oscillator}
+{Abstract circuit scheme of a basic sawtooth oscillator 
+\backslash
+label{fig-sawosc}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2124,7 +2245,20 @@ end{center}
 
 \begin_layout Standard
 To get a triangle shaped output signal, the current source can be reversed
- in response to the detector 
+ in response to the detector (see figure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{fig-triosc}
+\end_layout
+
+\end_inset
+
+) 
 \begin_inset ERT
 status open
 
@@ -2209,7 +2343,9 @@ cite[Ch.
 
 \begin_layout Plain Layout
 
-{Circuit scheme of a simple triangle oscillator}
+{Circuit scheme of a simple triangle oscillator 
+\backslash
+label{fig-triosc}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2230,16 +2366,33 @@ end{center}
 \end_layout
 
 \begin_layout Standard
-Either of these two waveforms can be wave-shaped into to other common basic
- waveforms.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagebreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+These two waveforms can be wave-shaped into to other common basic waveforms.
  All required wave shaping methods are fairly simple and their accuracy
  is sufficient for musical purposes.
  The sine wave is an exception, because there is no simple electronic method
  of creating a pure sine wave.
  What is generally used is a rounded triangle, which gives at least 1 %
  of harmonic distortion.
- In order to get a purer sine wave, the harmonics can be filtered out with
- a VCF following in the signal chain 
+ To get a purer sine wave, the harmonics can be filtered out with a 
+voltage-controlled filter
+\lang english
+ following in the signal chain 
 \begin_inset ERT
 status open
 
@@ -2267,9 +2420,9 @@ How fast the capacitor is charged is determined by the intensity of the
 \end_layout
 
 \begin_layout Standard
-However, creating a stable VCO design presents one of the toughest challenges
- for musical engineers, because the human ear is extremely sensitive to
- pitch changes.
+However, creating a stable voltage-controlled oscillator design presents
+ one of the toughest challenges for musical engineers, because the human
+ ear is extremely sensitive to pitch changes.
  Also compositional processes like multitrack recording plainly reveal errors
  in pitch relationships 
 \begin_inset ERT
@@ -2326,33 +2479,8 @@ ng currents through a capacitor becomes increasingly weak below a certain
  To control the charging time of the capacitor and therefore the cutoff
  frequency a resistor is added.
  This is referred to as a resistor-capacitor (RC) element.
- This simple circuit represents a passive, first-order butterworth filter
- with a roll-off of 6 dB per octave.
- 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-The Moog filter for example concatenates four of these RC elements in a
- row and regulates the resistor values 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cite[p.~57]{Anwander2011}
-\end_layout
-
-\end_inset
-
-.
- 
-\end_layout
-
-\end_inset
-
+ This simple circuit represents a passive, first-order filter with a roll-off
+ of 6 dB per octave.
  To increase the slope of the filter multiple RC elements can be connected
  in series 
 \begin_inset ERT
@@ -2488,7 +2616,9 @@ url{http://de.wikipedia.org/wiki/Sallen-Key-Filter}]
 
 \begin_layout Plain Layout
 
-{Active Sallen-Key low pass filter circuit scheme}
+{Active Sallen-Key low pass filter circuit scheme 
+\backslash
+label{fig-sallenkey}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2513,7 +2643,20 @@ vspace*{-2em}
 \end_inset
 
  A better and more flexible solution is the usage of an active filter design,
- like the Sallen-Key filter.
+ like the Sallen-Key filter (see figure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{fig-sallenkey}
+\end_layout
+
+\end_inset
+
+).
  This is a common second-order filter, which is applicable as a low or high
  pass, whereby only resistors and capacitors have to be swapped 
 \begin_inset ERT
@@ -2529,8 +2672,8 @@ cite[p.~97]{Sontheimer2004}
 \end_inset
 
 .
- Resistor
-\begin_inset script superscript
+ Resistor (R
+\begin_inset script subscript
 
 \begin_layout Plain Layout
 2
@@ -2538,8 +2681,8 @@ cite[p.~97]{Sontheimer2004}
 
 \end_inset
 
- and capacitor
-\begin_inset script superscript
+) and capacitor (C
+\begin_inset script subscript
 
 \begin_layout Plain Layout
 2
@@ -2547,7 +2690,7 @@ cite[p.~97]{Sontheimer2004}
 
 \end_inset
 
- can be identified to form a low pass section 
+) can be identified to form a low pass section 
 \begin_inset ERT
 status open
 
@@ -2620,7 +2763,7 @@ begin{center}
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename graphics/envelope.png
+	filename graphics/envelope3.png
 	display false
 	width 7cm
 
@@ -2658,7 +2801,7 @@ newline
 \backslash
 protect{
 \backslash
-cite[p.~41]{Anwander2011}}]
+cite[p.~41, edited by author]{Anwander2011}}]
 \end_layout
 
 \begin_layout Plain Layout
@@ -2707,9 +2850,15 @@ vspace*{-2em}
  To achieve this two preceding potentiometers with a diode each should be
  connected.
  The diodes must be pointed in opposite directions (see figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "AR-envelope"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{AR-envelope}
+\end_layout
 
 \end_inset
 
@@ -2768,7 +2917,7 @@ y manufactured circuit boards for this project as opposed to elaborating
 
 \begin_layout Standard
 During the research phase of this project it came to the authors attention,
- that a modular synthesizer building workshop would be taking place in berlin
+ that a modular synthesizer building workshop would be taking place in Berlin
  monthly.
  It is organized by a spanish collective from barcelona called 
 \emph on
@@ -2813,7 +2962,7 @@ There are several formats for module sizes, power supply plugs or patch
  In the DIY modular synth scene it is a common practice to use banana jack
  connectors instead of mini jack for patching.
  Those have the possibility of stacking the connectors on top of each other
- and splitting the signal without having to use a multiplier module.
+ and split the signal without having to use a multiplier module.
  In this project the modules are EuroRack size, but use banana plugs.
  
 \end_layout
@@ -2869,8 +3018,8 @@ cite[p.~74]{Sontheimer2004}
  connectors to a flat ribbon cable that lies in the case.
  Or even just fix female connectors to the cable and plug them directly
  into the modules.
- Additionally it is planned to add an IEC socket and a power switch to it
- for more comfortable on and off switching and more steady starting current.
+ Additionally it is planned to add an IEC socket and a power switch for
+ comfortable on and off switching and more steady starting current.
 \end_layout
 
 \begin_layout Standard
@@ -2896,7 +3045,7 @@ pagebreak
 \end_layout
 
 \begin_layout Section
-Front panels
+Front Panels
 \end_layout
 
 \begin_layout Standard
@@ -2977,7 +3126,9 @@ url{http://befaco.org}
 
 \begin_layout Plain Layout
 
-{Output module template}
+{Output module template 
+\backslash
+label{fig-frontpanel}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -3024,8 +3175,21 @@ For etching the template would be transferred onto a copper board and put
 \end_inset
 
 .
- A mirror-inverted label template is printed onto a piece of high gloss
- paper for inkjet printers - but with a laser printer.
+ A mirror-inverted label template (see figure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{fig-frontpanel}
+\end_layout
+
+\end_inset
+
+) is printed onto a piece of high gloss paper for inkjet printers - but
+ with a laser printer.
  It is cut and placed face down onto the upper side of the panel.
  By thoroughly pressing down a hot flat iron (for ironing clothes) onto
  the panel for a few minutes, the toner cartridge particles move to the
@@ -3037,6 +3201,22 @@ For etching the template would be transferred onto a copper board and put
  can be prepunched and drilled.
  Lastly all boreholes are deburred.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{-0.5em} 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3089,7 +3269,20 @@ begin{center}
 \begin_inset Caption
 
 \begin_layout Plain Layout
-BF-22 filter module
+BF-22 filter module 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{bf22front}
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \end_inset
@@ -3100,6 +3293,10 @@ BF-22 filter module
 \begin_layout Plain Layout
 \begin_inset ERT
 status open
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -3126,9 +3323,21 @@ vspace*{-2em}
 \end_layout
 
 \begin_layout Standard
-This module is an extended copy of the filter from the legendary Korg MS-20
- and is based upon the principle of the Sallen and Key filter (see chapter
- 
+This module (shown in figure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{bf22front}
+\end_layout
+
+\end_inset
+
+) is an extended copy of the filter from the legendary Korg MS-20 and is
+ based upon the principle of the Sallen-Key filter (see chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:electronic-filter"
@@ -3137,10 +3346,9 @@ reference "sub:electronic-filter"
 
 ).
  It combines two linkable filter stages in one module.
- Each stage features cutoff and frequency knobs, as well as several voltage
- control inputs for cutoff frequency and resonance, whereas the cutoff frequency
- input can be attenuated and inverted with one knob representing modulation
- depth (labeled: X-1 ...
+ Each stage features cutoff and resonance knobs and the corresponding CV
+ inputs, whereas the cutoff frequency input can be attenuated and inverted
+ with one knob representing modulation depth (labeled: X-1 ...
  0 ...
  X1).
  The HP/LP switch determines, if the filter is used in high pass or low
@@ -3176,7 +3384,7 @@ lines 0
 placement R
 overhang 0in
 width "36text%"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -3216,7 +3424,20 @@ begin{center}
 \begin_inset Caption
 
 \begin_layout Plain Layout
-BF-22 main circuit board
+BF-22 main circuit board 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{bf22board}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3265,8 +3486,21 @@ A look at the oscilloscope shows a sine like waveform.
 \begin_layout Standard
 Below the front panel sits an interface board where the knobs, switches,
  LEDs and banana sockets are mounted to.
- A thirty pin socket connects the interface board to the main circuit board,
- which contains the signal processing circuitry.
+ A thirty pin socket connects the interface board to the main circuit board
+ (see figure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{bf22board}
+\end_layout
+
+\end_inset
+
+), which contains the signal processing circuitry.
  The socket for the power supply sits on the very bottom.
 \end_layout
 
@@ -3429,7 +3663,9 @@ url{http://www.notesandvolts.com/2012/01/fun-with-arduino-midi-input-basics.html
 
 \begin_layout Plain Layout
 
-{Arduino MIDI input circuit}
+{Arduino MIDI input circuit 
+\backslash
+label{fig-arduinocircuit}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -3475,7 +3711,21 @@ Conveniently the Arduino must be provided with a 9-12 volt power supply,
 
 \begin_layout Standard
 The MIDI input communication has been established by the usage of a 6N138
- optocoupler, that isolates the Arduino circuit from the MIDI device.
+ optocoupler, that isolates the Arduino circuit from the MIDI device (see
+ figure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{fig-arduinocircuit}
+\end_layout
+
+\end_inset
+
+).
  On the software side the Arduino MIDI Library v3.2 has been included, which
  takes care of interpreting the serial digital data arriving at the Arduino's
  RX pin.
@@ -3543,11 +3793,11 @@ The objective to create a functional prototype can be considered a complete
 
 \begin_layout Standard
 This project provides a great basis for further sound experimentation.
- Because of its modular setup, there is lots of space for further modules,
+ Because of its modular setup, there is a lot of space for further modules,
  although the requirements for power supply and case size will increase
  with the number of modules.
- Next up the construction of an oscillator module is planned as soon as
- time and monetary means allow it.
+ The next step will be the construction of an oscillator module as soon
+ as time and monetary means allow it.
 \end_layout
 
 \begin_layout Section*
