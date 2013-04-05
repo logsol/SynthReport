@@ -239,7 +239,7 @@ Berlin, Germany 2012
 
 \begin_layout Plain Layout
 
-Words: 6043
+Words: 6035
 \end_layout
 
 \begin_layout Plain Layout
@@ -410,16 +410,17 @@ Its goal is to convey an understanding of the inner workings of electronic
 \emph on
 moog
 \emph default
- 
-\begin_inset ERT
-status open
+ (Fjellestad, 2004) 
+\begin_inset CommandInset citation
+LatexCommand nocite
+key "Fjellestad:movie"
 
-\begin_layout Plain Layout
+\end_inset
 
 
-\backslash
-cite{Fjellestad:movie}
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand nocite
+key "Fjellestad:movie"
 
 \end_inset
 
@@ -1053,21 +1054,8 @@ cite[p.~20]{Dunn1992}
 \emph on
 moog
 \emph default
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cite{Fjellestad:movie}
-\end_layout
-
-\end_inset
-
- he states that he had been completely obsessed with building and later
- designing Theremins since the age of 14.
+ (Fjellestad, 2004) he states that he had been completely obsessed with
+ building and later designing Theremins since the age of 14.
  A year later he built a transistor based voltage-controlled oscillator
  and amplifier for the composer Herbert Deutsch.
  This led Moog to the presentation of a paper entitled 
