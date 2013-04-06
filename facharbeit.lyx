@@ -239,7 +239,7 @@ Berlin, Germany 2012
 
 \begin_layout Plain Layout
 
-Words: 6035
+Words: 5926
 \end_layout
 
 \begin_layout Plain Layout
@@ -2377,10 +2377,8 @@ These two waveforms can be wave-shaped into to other common basic waveforms.
  of creating a pure sine wave.
  What is generally used is a rounded triangle, which gives at least 1 %
  of harmonic distortion.
- To get a purer sine wave, the harmonics can be filtered out with a 
-voltage-controlled filter
-\lang english
- following in the signal chain 
+ To get a purer sine wave, the harmonics can be filtered out with a voltage-cont
+rolled filter following in the signal chain 
 \begin_inset ERT
 status open
 
@@ -2998,7 +2996,7 @@ cite[p.~74]{Sontheimer2004}
 
  and mounted onto a perfboard.
  Instead of the 7815 and 7915 voltage regulator ICs the 7812 and 7912 were
- used in order to get a ±12 volt power supply with a center tap for the
+ used in order to get a +/-12 volt power supply with a center tap for the
  ground.
  The modules can be connected to the four male 16-pin flat ribbon connectors,
  that were added to make the power supply compliant to the EuroRack standard.
@@ -3520,7 +3518,7 @@ status open
 
 \begin_layout Plain Layout
 The term hot signal is used commonly to describe signals with a relatively
- high voltage, in this case ±5 volts.
+ high voltage.
 \end_layout
 
 \end_inset
